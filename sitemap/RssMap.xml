@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Нерухомість</title>
+    <link>http://aparts.in.ua</link>
+    <description>Сайт для продажу і оренди нерухомості</description>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fcabinet%2faddfeedback</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fcabinet%2faddfeedback</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fcabinet%2faddfeedback</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fcabinet%2faddfeedback</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/cabinet/addfeedback?phone=380978600734</guid>
+      <title>Ð”Ð¾Ð´Ð°Ñ‚Ð¸ Ð²Ñ–Ð´Ð³ÑƒÐº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/cabinet/addfeedback?phone=380978600734</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2ffeedback%2fadd</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2ffeedback%2fadd</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2ffeedback%2fadd</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2ffeedback%2fadd</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f4</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f4</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/cabinet/addfeedback?phone=380973064570</guid>
+      <title>Ð”Ð¾Ð´Ð°Ñ‚Ð¸ Ð²Ñ–Ð´Ð³ÑƒÐº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/cabinet/addfeedback?phone=380973064570</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f4</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f4</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/cabinet/addfeedback?phone=380974482472</guid>
+      <title>Ð”Ð¾Ð´Ð°Ñ‚Ð¸ Ð²Ñ–Ð´Ð³ÑƒÐº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/cabinet/addfeedback?phone=380974482472</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fcabinet%2fuserprofile</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fcabinet%2fuserprofile</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fcabinet%2ffeedbacks</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fcabinet%2ffeedbacks</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fcabinet%2ffeedbacks</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fcabinet%2ffeedbacks</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fcabinet%2fuserprofile</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fcabinet%2fuserprofile</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f9</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f9</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f9</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f9</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f10</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f10</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/cabinet/feedbacks?phone=380978600734</guid>
+      <title>ÐšÐ°Ð±Ñ–Ð½ÐµÑ‚ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/cabinet/feedbacks?phone=380978600734</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f10</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f10</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/cabinet/userprofile?phone=380978600734</guid>
+      <title>ÐšÐ°Ð±Ñ–Ð½ÐµÑ‚ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/cabinet/userprofile?phone=380978600734</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f8</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f8</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f8</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f8</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fhousedetails%2f15</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fhousedetails%2f15</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fhousedetails%2f15</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fhousedetails%2f15</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=address&amp;amp;viewtype=map</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=address&amp;amp;viewtype=map</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=address</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=address</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=date&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=date&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=addressdescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=addressdescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=datedescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=datedescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=address&amp;amp;viewtype=map</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=address&amp;amp;viewtype=map</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=address</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=address</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=datedescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=datedescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=date&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=date&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=addressdescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=addressdescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2flanddetails%2f11</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2flanddetails%2f11</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2flanddetails%2f11</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2flanddetails%2f11</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2flanddetails%2f12</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2flanddetails%2f12</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2flanddetails%2f12</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2flanddetails%2f12</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=address</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=address</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=datedescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=datedescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=date&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=date&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=address&amp;amp;viewtype=map</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=address&amp;amp;viewtype=map</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=datedescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=datedescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=addressdescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=addressdescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=address&amp;amp;viewtype=map</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=address&amp;amp;viewtype=map</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=address</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=address</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2faccount%2fforgetpassword</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2faccount%2fforgetpassword</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2faccount%2fforgetpassword</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2faccount%2fforgetpassword</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=date&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=date&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=addressdescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=addressdescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2faccount%2flicense</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2faccount%2flicense</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2faccount%2flicense</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2faccount%2flicense</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/feedback/add</guid>
+      <title>Ð”Ð¾Ð´Ð°Ñ‚Ð¸ Ð²Ñ–Ð´Ð³ÑƒÐº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/feedback/add</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2ffeedback%2findex</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2ffeedback%2findex</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2ffeedback%2findex</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2ffeedback%2findex</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f2</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f2</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f2</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f2</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f7</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f7</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f7</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f7</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f3</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f3</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f3</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f3</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f5</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f5</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f5</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f5</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f1</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f1</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/apartmentdetails/4</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/apartmentdetails/4</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f1</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f1</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/cabinet/feedbacks?phone=380974482472</guid>
+      <title>ÐšÐ°Ð±Ñ–Ð½ÐµÑ‚ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/cabinet/feedbacks?phone=380974482472</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/cabinet/userprofile?phone=380974482472</guid>
+      <title>ÐšÐ°Ð±Ñ–Ð½ÐµÑ‚ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/cabinet/userprofile?phone=380974482472</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f6</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f6</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f6</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f6</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/cabinet/feedbacks?phone=380973064570</guid>
+      <title>ÐšÐ°Ð±Ñ–Ð½ÐµÑ‚ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/cabinet/feedbacks?phone=380973064570</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/cabinet/userprofile?phone=380973064570</guid>
+      <title>ÐšÐ°Ð±Ñ–Ð½ÐµÑ‚ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/cabinet/userprofile?phone=380973064570</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fcabinet%2fannouncements</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fcabinet%2fannouncements</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=rentshort&amp;amp;order=address&amp;amp;viewtype=map</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=rentshort&amp;amp;order=address&amp;amp;viewtype=map</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fcabinet%2fannouncements</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fcabinet%2fannouncements</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/apartmentdetails/9</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/apartmentdetails/9</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=rentshort&amp;amp;order=address</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=rentshort&amp;amp;order=address</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=rentshort&amp;amp;order=datedescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=rentshort&amp;amp;order=datedescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=rentshort&amp;amp;order=date&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=rentshort&amp;amp;order=date&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=rentshort&amp;amp;order=addressdescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=rentshort&amp;amp;order=addressdescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/cabinet/announcements?phone=380978600734</guid>
+      <title>ÐšÐ°Ð±Ñ–Ð½ÐµÑ‚ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/cabinet/announcements?phone=380978600734</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=rent&amp;amp;order=address&amp;amp;viewtype=map</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=rent&amp;amp;order=address&amp;amp;viewtype=map</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/apartmentdetails/8</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/apartmentdetails/8</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/apartmentdetails/10</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/apartmentdetails/10</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=rent&amp;amp;order=datedescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=rent&amp;amp;order=datedescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=rent&amp;amp;order=date&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=rent&amp;amp;order=date&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=rent&amp;amp;order=addressdescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=rent&amp;amp;order=addressdescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=rent&amp;amp;order=address</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=rent&amp;amp;order=address</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fnotes%2findex</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fnotes%2findex</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fnotes%2findex</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fnotes%2findex</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?page=1</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?page=1</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/housedetails/15</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– Ð±ÑƒÐ´Ð¸Ð½ÐºÑƒ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/housedetails/15</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=address&amp;amp;viewtype=map</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=address&amp;amp;viewtype=map</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=datedescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=datedescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=address</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=address</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=date&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=date&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=addressdescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=addressdescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=address&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=address&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=address&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=address&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?page=1</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?page=1</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/landdetails/12</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€Ð¸ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/landdetails/12</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fhouses</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fhouses</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fhouses</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fhouses</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=address&amp;amp;viewtype=map</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=address&amp;amp;viewtype=map</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=address</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=address</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=datedescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=datedescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/landdetails/11</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€Ð¸ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/landdetails/11</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=address&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=address&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=date&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=date&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=addressdescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=addressdescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2faccount%2fregister</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2faccount%2fregister</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2faccount%2fregister</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2faccount%2fregister</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=address&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=address&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2flands</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2flands</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2flands</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2flands</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/forgetpassword</guid>
+      <title>Ð’Ñ–Ð´Ð½Ð¾Ð²Ð»ÐµÐ½Ð½Ñ Ð¿Ð°Ñ€Ð¾Ð»ÑŽ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/forgetpassword</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2faccount%2flogin</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2faccount%2flogin</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/license</guid>
+      <title>ÐšÐ¾Ñ€Ð¸ÑÑ‚ÑƒÐ²Ð°Ñ†ÑŒÐºÐ° ÑƒÐ³Ð¾Ð´Ð° - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/license</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2faccount%2flogin</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2faccount%2flogin</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/feedback/index</guid>
+      <title>Ð’Ñ–Ð´Ð³ÑƒÐºÐ¸ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/feedback/index</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?page=1</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?page=1</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/apartmentdetails/7</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/apartmentdetails/7</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/apartmentdetails/2</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/apartmentdetails/2</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/apartmentdetails/3</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/apartmentdetails/3</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/cabinet/announcements?phone=380974482472</guid>
+      <title>ÐšÐ°Ð±Ñ–Ð½ÐµÑ‚ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/cabinet/announcements?phone=380974482472</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/apartmentdetails/5</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/apartmentdetails/5</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/apartmentdetails/1</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/apartmentdetails/1</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/cabinet/announcements?phone=380973064570</guid>
+      <title>ÐšÐ°Ð±Ñ–Ð½ÐµÑ‚ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/cabinet/announcements?phone=380973064570</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/apartmentdetails/6</guid>
+      <title>Ð”ÐµÑ‚Ð°Ð»Ñ– - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/apartmentdetails/6</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=buy&amp;amp;order=address&amp;amp;viewtype=map</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=buy&amp;amp;order=address&amp;amp;viewtype=map</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=buy&amp;amp;order=address</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=buy&amp;amp;order=address</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=buy&amp;amp;order=datedescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=buy&amp;amp;order=datedescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=buy&amp;amp;order=date&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=buy&amp;amp;order=date&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=rentshort&amp;amp;order=address&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=rentshort&amp;amp;order=address&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=rent&amp;amp;order=address&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=rent&amp;amp;order=address&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=buy&amp;amp;order=addressdescending&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=buy&amp;amp;order=addressdescending&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/notes/index</guid>
+      <title>Ð’Ñ–Ð´Ð·Ð½Ð°Ñ‡ÐµÐ½Ñ– Ð¾Ð³Ð¾Ð»Ð¾ÑˆÐµÐ½Ð½Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/notes/index</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=address&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±ÑƒÐ´Ð¸Ð½ÐºÑ–Ð² - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=address&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=address&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ñ–Ð»ÑÐ½Ð¾Ðº - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=address&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/?type=buy&amp;amp;order=address&amp;amp;viewtype=list</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/?type=buy&amp;amp;order=address&amp;amp;viewtype=list</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/</guid>
+      <title>Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ²Ð°Ñ€Ñ‚Ð¸Ñ€ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/register?returnurl=%2f</guid>
+      <title>Ð ÐµÑ”ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/register?returnurl=%2f</link>
+      <description />
+    </item>
+    <item>
+      <guid>http://aparts.in.ua/account/login?returnurl=%2f</guid>
+      <title>Ð’Ñ…Ñ–Ð´ - Ð¡Ð°Ð¹Ñ‚ Ð½ÐµÑ€ÑƒÑ…Ð¾Ð¼Ð¾ÑÑ‚Ñ–</title>
+      <link>http://aparts.in.ua/account/login?returnurl=%2f</link>
+      <description />
+    </item>
+  </channel>
+</rss>

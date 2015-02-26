@@ -1,0 +1,54 @@
+﻿@using RielAp.Web.Utils
+@model RielAp.Web.Models.LandsViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row-fluid">
+    <div class="span4">
+        <div class="row-fluid">
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li class="row-fluid">
+                        <div class="span3" style="display: inline; line-height:30px;">@RielAp.Translation.Translation.AnnouncementTypeLabel</div>
+                        <div class="btn-group span7">
+                        
+            <a class="btn @(ViewBag.ViewType == NavigationViewType.List ? "active" : "")" href="@Url.Action("Lands", new { type = ViewBag.Type, order= ViewBag.OrderType })">Список</a>
+            <a class="btn @(ViewBag.ViewType == NavigationViewType.Map ? "active" : "")" href="@Url.Action("Lands", new { type = ViewBag.Type, order= ViewBag.OrderType, viewtype = NavigationViewType.Map })">Карта</a>
+                        </div>    
+                    </li>
+                    <li class="divider"></li>
+                    <li class="row-fluid">
+                        <div class="span3" style="display: inline; line-height:30px;">@RielAp.Translation.Translation.AnnouncementOrderLabel</div>
+                        <div class="btn-group span7">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                @(EnumsToSelectedListItems.GetTextFromEnumValue(ViewBag.OrderType))
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="@(ViewBag.OrderType == AnnouncementOrder.Address ? "active" : "")"><a href="@Url.Action("Lands", "Announcements", new { type = ViewBag.Type, order = AnnouncementOrder.Address, viewtype = ViewBag.ViewType })">@EnumsToSelectedListItems.GetTextFromEnumValue(AnnouncementOrder.Address)</a></li>
+                                <li class="@(ViewBag.OrderType == AnnouncementOrder.AddressDescending ? "active" : "")"><a href="@Url.Action("Lands", "Announcements", new { type = ViewBag.Type, order = AnnouncementOrder.AddressDescending, viewtype = ViewBag.ViewType })">@EnumsToSelectedListItems.GetTextFromEnumValue(AnnouncementOrder.AddressDescending)</a></li>
+                                <li class="@(ViewBag.OrderType == AnnouncementOrder.Date ? "active" : "")"><a href="@Url.Action("Lands", "Announcements", new { type = ViewBag.Type, order = AnnouncementOrder.Date, viewtype = ViewBag.ViewType })">@EnumsToSelectedListItems.GetTextFromEnumValue(AnnouncementOrder.Date)</a></li>
+                                <li class="@(ViewBag.OrderType == AnnouncementOrder.DateDescending ? "active" : "")"><a href="@Url.Action("Lands", "Announcements", new { type = ViewBag.Type, order = AnnouncementOrder.DateDescending, viewtype = ViewBag.ViewType })">@EnumsToSelectedListItems.GetTextFromEnumValue(AnnouncementOrder.DateDescending)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            
+
+        @Html.Partial("_LandsFilter", new LandFilterCriteriaViewModel(Model.FilterCriteria))
+    </div>
+    <div class="span8">
+        <div class="btn-group" style="margin-left: auto; margin-right: auto; width: 410px; display: block; margin-bottom: 10px;">
+            <a class="btn @(ViewBag.Type == RielAp.Domain.Models.AnnouncementType.Buy ? "active" : "")" href="@Url.Action("Lands", "Announcements", new { type = RielAp.Domain.Models.AnnouncementType.Buy, order = ViewBag.OrderType, viewtype = ViewBag.ViewType })">@EnumsToSelectedListItems.GetTextFromEnumValue(RielAp.Domain.Models.AnnouncementType.Buy)</a>
+            <a class="btn @(ViewBag.Type == RielAp.Domain.Models.AnnouncementType.Rent ? "active" : "")" href="@Url.Action("Lands", "Announcements", new { type = RielAp.Domain.Models.AnnouncementType.Rent, order = ViewBag.OrderType, viewtype = ViewBag.ViewType })">@EnumsToSelectedListItems.GetTextFromEnumValue(RielAp.Domain.Models.AnnouncementType.Rent)</a>
+            <a class="btn @(ViewBag.Type == RielAp.Domain.Models.AnnouncementType.RentShort ? "active" : "")" href="@Url.Action("Lands", "Announcements", new { type = RielAp.Domain.Models.AnnouncementType.RentShort, order = ViewBag.OrderType, viewtype = ViewBag.ViewType })">@EnumsToSelectedListItems.GetTextFromEnumValue(RielAp.Domain.Models.AnnouncementType.RentShort)</a>
+        </div>
+        @RenderBody()
+    </div>
+</div>
+@section scripts{
+    @Scripts.Render("~/bundles/js");
+    @RenderSection("scripts", required: false)
+}

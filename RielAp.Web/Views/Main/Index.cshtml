@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = RielAp.Translation.Translation.StatisticPageTitle;
+}
+
+
+
+<div style="width:800px; margin: auto;">
+    <h3>@RielAp.Translation.Translation.MainIndexTitleDistrictsChart</h3>
+    <canvas id="districtCompareChart" width="800" height="500"></canvas>
+</div>
+
+<div style="width:800px; margin: auto;">
+    <h3 id="historyChartTitle"></h3>
+    <label for="">Виберіть район</label><select id="districts"></select>
+    <canvas id="districtHistoryChart" width="800" height="500"></canvas>
+</div>
+
+
+@section scripts{
+    <script src="~/Scripts/Chart.js"></script>
+    <script type="text/javascript">
+        function generateDataForChart(l, v) {
+            var data = {
+                labels: l,
+                datasets: [
+                    {
+                        fillColor: "rgba(151,187,205,0.5)",
+                        strokeColor: "rgba(151,187,205,1)",
+                        data: v
+                    }
+                ]
+            };
+            return data;
+        }
+
+        function fillinDistricts(options) {
+            $("#districts").html("");
+            var districtsHtml = "";
+            for (var i = 0; i < options.length; i++) {
+                districtsHtml += "<option>" + options[i] + "</option>";
+            }
+            $("#districts").html(districtsHtml);
+            
+        }
+
+        function showDistrictHistory(district) {
+            $.post("@Url.Action("GetStatisticForDistrict","Main")", { district: district }, function (res) {
+                $("#historyChartTitle").html(res.Title);
+                var l = [];
+                var v = [];
+                for (var key in res.Statistic) {
+                    if (res.Statistic.hasOwnProperty(key)) {
+                        l.push(key);
+                        v.push(res.Statistic[key]);
+                    }
+                }
+                districtHistoryChart.Line(generateDataForChart(l, v));
+            });
+        }
+
+        $(document).ready(function () {
+            $("#districts").change(function () {
+                showDistrictHistory($(this).val())
+            });
+
+            var ctx1 = $("#districtCompareChart").get(0).getContext("2d");
+            districtsChart = new Chart(ctx1);
+            var ctx2 = $("#districtHistoryChart").get(0).getContext("2d");
+            districtHistoryChart = new Chart(ctx2);
+            $.post("@Url.Action("GetStatisticPerDistrict", "Main")", function (res) {
+                districts = [];
+                var v = [];
+                for (var key in res) {
+                    if (res.hasOwnProperty(key)) { 
+                        districts.push(key);
+                        v.push(res[key]);
+                    }
+                }
+                
+                districtsChart.Bar(generateDataForChart(districts, v));
+
+                fillinDistricts(districts);
+                showDistrictHistory($("#districts").val());
+            });
+
+            
+        });
+    </script>
+}

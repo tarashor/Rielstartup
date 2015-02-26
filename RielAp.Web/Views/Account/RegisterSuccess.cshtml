@@ -1,0 +1,16 @@
+﻿@model RielAp.Web.Models.RegisterViewModel
+@using RielAp.Translation;
+
+@{
+    ViewBag.Title = Translation.RegisterPageTitle;
+    ViewBag.CurrentPage = NavigationPage.None;
+}
+
+    <fieldset>
+        <legend>@Translation.RegisterPageTitle</legend>
+        @Translation.RegisterPageSuccessMessage 
+        <a href="@(ViewBag.ReturnUrl ?? "/")">@Translation.RegisterPageGoBack</a>
+
+        
+    </fieldset>
+

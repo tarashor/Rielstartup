@@ -1,0 +1,146 @@
+﻿@model RielAp.Web.Models.RegisterViewModel
+@using RielAp.Translation;
+
+@{
+    ViewBag.CurrentPage = NavigationPage.None;
+    ViewBag.Title = Translation.RegisterPageTitle;
+}
+
+
+    <fieldset>
+        <legend>@Translation.RegisterPageTitle</legend>
+
+
+        @if (!Html.ViewData.ModelState.IsValid)
+        {
+        <div class="alert alert-error">
+            @foreach (var modelError in Html.ViewData.ModelState.SelectMany(keyValuePair => keyValuePair.Value.Errors))
+            {
+                <div>@modelError.ErrorMessage</div>
+            }
+        </div>
+        }
+
+        <div class="alert alert-error" style="display:none;" id="maxNumbersReached">
+                  @string.Format(Translation.MaxNumbersLimitReached, ViewBag.MaxMobileNumbers)
+        </div>
+
+        <div class="alert" >
+                  @Translation.RegisterPageEmailHintMessage
+        </div>
+        @using (Html.BeginForm("Register", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", style = "width: 500px;  margin: auto;" }))
+        {
+            <div class="control-group">
+                <label class="control-label" for="Phone">@Translation.RegisterPageTelephoneNumberLabel</label>
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "bfh-phone", data_format = "+38 (ddd) ddd-dddd", data_number=(Model != null ? Model.Phone:string.Empty) })
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="UserName">@Translation.RegisterPageUserNameLabel</label>
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.UserName, new { placeholder = Translation.RegisterPageUserNameLabel })
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="Password">@Translation.RegisterPagePassword</label>
+                <div class="controls">
+                    @Html.PasswordFor(m => m.Password, new { placeholder = Translation.RegisterPagePassword })
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="ConfirmPassword">@Translation.RegisterPageConfirmPassword</label>
+                <div class="controls">
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { placeholder = Translation.RegisterPageConfirmPassword })
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="Email">@Translation.RegisterPageEmailLabel</label>
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.Email, new { placeholder = Translation.RegisterPageEmailLabel })
+                </div>
+            </div>
+            
+            <div class="control-group">
+                        <div class="controls" >
+                            <div id="addUserPhoneBtn" class="btn">@Translation.CabinetAddUserPhoneLabel</div>
+                        </div>
+                    </div>
+            
+            for (int i = 0; i < ViewBag.MaxMobileNumbers; i++ )
+            {
+                string indexValue = string.Format("m{0}", i);
+                <div class="control-group addintionalNumberContainer" style="display:none;">
+                    <div class="controls">
+                        <input type="hidden" name="index" value="@indexValue" disabled="disabled"/>
+                        <input type="text" class = "bfh-phone" data-format = "+38 (ddd) ddd-dddd" name="@string.Format("[{0}].Number", indexValue)" disabled="disabled"/>
+                        <input type="hidden" name="@string.Format("[{0}].MobileNumberId", indexValue)" value="0" disabled="disabled"/>
+                        <div class="btn deleteUserPhoneBtn">@Translation.CabinetDeleteUserPhoneLabel</div>
+                    </div>
+                </div>
+            }
+            
+            <div class="control-group">
+                <label class="checkbox inline">
+                    @Html.CheckBoxFor(m => m.CanReceiveEmail) @Translation.RegisterPageCanReceiveMails
+                </label>
+            </div>
+            
+            <div class="control-group">
+                <label class="checkbox inline">
+                    <input type="checkbox" id="agreeCheckbox" value=""> @Html.Raw(string.Format(Translation.RegisterPageIAgreeWithUserTerms, Url.Action("License", "Account")))
+                </label>
+            </div>
+            
+            <div class="control-group" id="submitContainer" >
+                <div class="controls">
+                    <button type="submit" class="btn btn-success" disabled="disabled">@Translation.RegisterPageRegisterButton</button>
+                </div>
+            </div>
+    
+        }
+
+</fieldset>
+
+@section scripts{
+    @Scripts.Render("~/bundles/js");
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#agreeCheckbox').change(function () {
+                if ($(this).is(':checked')) {
+                    $('button[type="submit"]').removeAttr('disabled');
+                    //$('#submitContainer button').removeClass('disabled');
+                }
+                else {
+                    $('button[type="submit"]').attr('disabled', 'disabled');
+                    //$('#submitContainer button').addClass('disabled');
+                }
+            });
+
+            $('#addUserPhoneBtn').click(function () {
+                var container = $(".addintionalNumberContainer:hidden:first");
+                if (container.length > 0) {
+                    container.show();
+                    container.find('input').removeAttr("disabled");
+                }
+                else {
+                    $('#maxNumbersReached').show();
+
+                    setTimeout(function () {
+                        $('#maxNumbersReached').hide(500);
+                    }, 5000);
+                }
+            });
+
+            $('.deleteUserPhoneBtn').click(function () {
+                $('#maxNumbersReached').hide();
+                var deleteBtn = $(this);
+                var container = deleteBtn.parents('.addintionalNumberContainer');
+                container.hide();
+                container.find('input').attr("disabled", "disabled");
+            });
+        });
+    </script>
+}

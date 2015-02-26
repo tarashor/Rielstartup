@@ -1,0 +1,211 @@
+﻿@model RielAp.Domain.Models.Announcement
+@using RielAp.Translation;
+
+@{
+    ViewBag.CurrentPage = NavigationPage.Cabinet;
+    RielAp.Domain.Models.Photo mainPhoto = Model.Photos.Where(p => p.IsMain).FirstOrDefault();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.AnnouncementID)
+    @Html.HiddenFor(model => model.UserID)
+    @Html.HiddenFor(model => model.Sold)
+    @Html.HiddenFor(model => model.Created)
+
+    <h3>@ViewBag.Title</h3>
+    
+    @Html.ValidationSummary(true)
+    <div>
+        <div class="pull-left">
+            <ul class="nav nav-pills" id="myTab">
+                <li class="active"><a href="#address">@Translation.AnnouncementEditAddress</a></li>
+                <li><a href="#infos">@Translation.AnnouncementEditInfos</a></li>
+                <li><a href="#photos">@Translation.AnnouncementEditPhotos</a></li>
+            </ul>
+        </div>
+        <div class="pull-right">
+            <input type="submit" value="@Translation.AnnouncementEditSaveButtonLabel" class="btn btn-success" />
+            @Html.ActionLink(Translation.AnnouncementEditBackButtonLabel, "Announcements", "Cabinet", new { phone = User.Identity.Name }, new { @class = "btn btn-danger" })
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="tab-content">
+        <div class="tab-pane active" id="address">
+            <div class="alert alert-info">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>@Translation.HintLabel</strong> @Translation.AnnouncementEditHintSetAddressLabel
+            </div>
+
+            @Html.HiddenFor(model => model.Address.Logitude, new { id = "longitude" })
+            @Html.HiddenFor(model => model.Address.Latitude, new { id = "latitude" })
+            <div class="row-fluid">
+                <div class="span9">
+                    <div id="YMapsID" style="height: 600px;"></div>
+                </div>
+                <div class="span3">
+                    <div class="row-fluid">
+                        <label class="checkbox inline">
+                            <input type="checkbox" id="inputAddress" />
+                            @Translation.AnnouncementEditAddressInputType
+                        </label>
+                    </div>
+                    <h5 class="row-fluid">
+                        @Translation.AnnouncementAddressTypeLabel
+                    </h5>
+                    <div class="row-fluid">
+                        @Html.DropDownListFor(model => model.Address.AddressType, EnumsToSelectedListItems.GetAddressTypeList(), new { id = "addressTypeInput" })
+                    </div>
+                    <h5 class="row-fluid villarge-address" id="AdministrativeAreaLabel">
+                        @Translation.AnnouncementAddressAdministrativeAreaLabel
+                    </h5>
+                    <div class="row-fluid villarge-address">
+                        @Html.TextBoxFor(model => model.Address.AdministrativeArea, new { id = "AdministrativeAreaInput" })
+                    </div>
+
+                    <h5 class="row-fluid villarge-address">
+                        @Translation.AnnouncementAddressSubAdministrativeAreaLabel
+                    </h5>
+                    <div class="row-fluid villarge-address">
+                        @Html.TextBoxFor(model => model.Address.SubAdministrativeArea, new { id = "SubAdministrativeAreaInput" })
+                    </div>
+
+                    <h5 class="row-fluid">
+                        @Translation.AnnouncementAddressLocalityNameLabel
+                    </h5>
+                    <div class="row-fluid">
+                        @Html.TextBoxFor(model => model.Address.LocalityName, new { id = "LocalityNameInput" })
+                    </div>
+
+                    <h5 class="row-fluid city-address" id="districtLabel">
+                        @Translation.AnnouncementAddressDistrictLabel
+                    </h5>
+                    <div class="row-fluid city-address" id="districtValue">
+                        @Html.TextBoxFor(model => model.Address.District, new { id = "DistrictInput" })
+                    </div>
+
+                    <h5 class="row-fluid city-address">
+                        @Translation.AnnouncementAddressStreetLabel
+                    </h5>
+                    <div class="row-fluid city-address">
+                        @Html.TextBoxFor(model => model.Address.Street, new { id = "StreetInput" })
+                    </div>
+
+                    <div class="row-fluid" id="showButtonRow">
+                        <input id="showButton" type="button" value="@Translation.EditAnnouncementAddressShowOnMapLabel" class="btn" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="infos" style="margin: auto; width: 800px;">
+            <div class="row-fluid">
+                <div class="span12">
+                    <h4 class="row-fluid">
+                        @Translation.AnnouncementType
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.DropDownListFor(model => model.Type, EnumsToSelectedListItems.GetAnnouncementTypesList(), new { @class = "span12" })
+                    </div>
+
+                    <h4 class="row-fluid">
+                        @Translation.ApartmentDetailsPagePriceLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.TextBoxFor(model => model.Price, new { @class = "span9" })
+                        @Html.DropDownListFor(model => model.Currency, EnumsToSelectedListItems.GetCurrenciesList(), new { @class = "span3" })
+                    </div>
+
+
+                    @RenderBody()
+
+                    <h4 class="row-fluid">
+                        @Translation.ApartmentDetailsPageNoticeLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.TextAreaFor(model => model.Notice, new { @class = "span12" })
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane" id="photos">
+            <div class="alert alert-info" id="photosLeft" style="margin: 10px 7px 10px 7px;">
+                
+                @if (Model.Photos.Count < ViewBag.User.Profile.MaxPhotosPerAnnouncements)
+                {
+                    @Html.Raw(string.Format(Translation.PhotosLeft, ViewBag.User.Profile.MaxPhotosPerAnnouncements - Model.Photos.Count))
+                }
+                else {
+                    @Html.Raw(string.Format(Translation.LimitForPhotosIsReachedLabel, "/"))
+                }
+            </div>
+
+            <div class="progress progress-striped active" id="progress" style="display:none; margin:20px;">
+                <div class="bar" style="width:100%;"></div>
+            </div>
+
+            <div id="addPhotoBtn" class="btn">
+                @Translation.AddPhotoBtnLabel
+            </div>
+
+            <div id="addPhotoBtnHidden" data-allowedextensions="jpg,bmp,png,gif" style="display: none;"></div>
+            <div>
+                <img id="mainPhotoContainer" style="width: 600px; height:500px; margin: 10px; left: 50%; position: relative; margin-left: -300px;" src="@(mainPhoto != null ? mainPhoto.Url : string.Empty)"/>
+            </div>
+            <div class="row-fluid" style="position: relative; height: 100px;">
+                <div id="photoCarousel">
+                    <div id="listPhotos" style="height: 100%; float: left;">
+                        @{
+                            var photos = Model.Photos.OrderBy(p => p.PhotoId);
+                            foreach (var photo in photos)
+                            {
+                                <div class="photoContainer" data-id="@photo.PhotoId">
+                                    <img class="photo" src="@photo.Url" />
+                                    <div class="photoDelete">
+                                        <img src="~/Content/images/removePhoto.png" style="position: absolute;" />
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script src="http://api-maps.yandex.ru/2.0.33/?load=package.full&lang=uk-UA" type="text/javascript"></script>
+     @Scripts.Render("~/bundles/js");
+    @Scripts.Render("~/bundles/edit")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var model = new EditAnnouncement('@Model.AnnouncementID', '@Url.Action("AddPhoto", "Cabinet")', '@Url.Action("DeletePhoto", "Cabinet")', '@Url.Action("SetMainPhoto", "Cabinet")', $('#addPhotoBtn'), $('#addPhotoBtnHidden'), $('#photoCarousel'), $('#mainPhotoContainer'));
+            $('#myTab a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+            model.addressInputMode($('#inputAddress').is(':checked'));
+            if ($('#addressTypeInput').val() == 'City') {
+                model.addressCityMode();
+            }
+            else {
+                model.addressVillargeMode();
+            }
+        });
+
+        
+
+        
+
+    </script>
+}

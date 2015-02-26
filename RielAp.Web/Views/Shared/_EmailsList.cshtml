@@ -1,0 +1,8 @@
+﻿@model IEnumerable<RielAp.Domain.Models.Email>
+<table class="table">
+        @foreach (var item in Model)
+        {
+            @Html.Partial("_Email", item)
+        }
+    </table>
+

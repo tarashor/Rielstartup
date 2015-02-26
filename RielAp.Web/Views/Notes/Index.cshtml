@@ -1,0 +1,68 @@
+﻿@model RielAp.Web.Models.NoteViewModel
+
+@{
+    ViewBag.Title = RielAp.Translation.Translation.NotesIndexTitle;
+    ViewBag.CurrentPage = NavigationPage.Notices;
+
+}
+
+<div class="btn btn-danger" id="clearNote" style="margin:7px;">
+    @RielAp.Translation.Translation.NoteClearActionLabel
+</div>
+
+@Html.Partial("_AnnouncementsTable", new AnnouncementsViewModel() { Announcements =  Model.Announcements})
+@Html.PageLinks(Model.Page, x => Url.Action("Index", new {page = x}))
+
+
+@section scripts{
+    @Scripts.Render("~/bundles/js");
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.actionNoteBtn').each(function (index, item) {
+                var apartmentId = $(item).attr('data-apartmentId');
+                $(item).attr('data-isAdded', Note.isAnnouncementIdAddedAlready(apartmentId));
+                applyState(item);
+            });
+
+            $('.actionNoteBtn').click(function () {
+                var btn = this;
+                var state = $(btn).attr('data-isAdded');
+                var apartmentId = $(btn).attr('data-apartmentId');
+                if (state.toLowerCase() == "false") {
+                    Note.addAnnouncementId(apartmentId);
+                    $(btn).attr('data-isAdded', true);
+                    applyState(btn);
+                }
+                else {
+                    Note.removeAnnouncementId(apartmentId);
+                    $(btn).attr('data-isAdded', false);
+                    applyState(btn);
+                }
+                refreshPage();
+            });
+
+            $('#clearNote').click(function () {
+                Note.removeAllAnnouncements();
+                refreshPage();
+            });
+        });
+
+        function applyState(btn) {
+            var state = $(btn).attr('data-isAdded');
+            if (state.toLowerCase() == "true") {
+                $(btn).removeClass("btn-success");
+                $(btn).addClass("btn-danger");
+                $(btn).text("@RielAp.Translation.Translation.NoteRemoveLabel");
+            }
+            else {
+                $(btn).removeClass("btn-danger");
+                $(btn).addClass("btn-success");
+                $(btn).text("@RielAp.Translation.Translation.NoteAddLabel");
+            }
+        };
+
+        function refreshPage() {
+            window.location = window.location;
+        }
+    </script>
+};

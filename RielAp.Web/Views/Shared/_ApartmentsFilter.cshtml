@@ -1,0 +1,172 @@
+﻿@model RielAp.Web.Models.ApartmentFilterCriteriaViewModel
+
+@using (Html.BeginForm(new { considerEmpty=false}))
+{
+    if (!Html.ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-error">
+            @foreach (var modelError in Html.ViewData.ModelState.SelectMany(keyValuePair => keyValuePair.Value.Errors))
+            {
+                <div>@modelError.ErrorMessage</div>
+            }
+        </div>
+    }
+    <div class="well sidebar-nav">
+        <ul class="nav nav-list" >
+            <li class="nav-header">Пошук </li>
+
+            <li class="row-fluid">
+                <div class="span5" style="line-height: 30px;">Адреса:</div>
+                @Html.DropDownListFor(m => m.Filter.Address.AddressType, Model.AddressTypes, new { @class = "span7", id = "AddressType" })
+            </li>
+            <li class="row-fluid villarge-address address">
+                <div class="span5" style="line-height: 30px;">Область:</div>
+                <select id="AdministrativeArea" disabled="true"  name="Filter.Address.AdministrativeArea" class="span7"></select>
+            </li>
+
+            <li class="row-fluid villarge-address address">
+                <div class="span5" style="line-height: 30px;">Район:</div>
+                <select id="SubAdministrativeArea" disabled="true" name="Filter.Address.SubAdministrativeArea" class="span7"></select>
+            </li>
+
+            <li class="row-fluid address">
+                <div class="span5" style="line-height: 30px;">Населений пункт:</div>
+                <select id="LocalityNames" disabled="true" name="Filter.Address.LocalityName" class="span7"></select>
+
+            </li>
+
+            <li class="row-fluid city-address address">
+                <div class="span5" style="line-height: 30px;">Район міста:</div>
+                <select id="Districts" disabled="true" name="Filter.Address.District" class="span7"></select>
+
+            </li>
+
+            <li class="divider"></li>
+
+            <li class="row-fluid">Ціна:</li>
+            <li class="row-fluid">
+                @Html.TextBoxFor(m => m.Filter.StartPrice, new { @class = "span4", placeholder = "від" })
+                @Html.TextBoxFor(m => m.Filter.EndPrice, new { @class = "span4", placeholder = "до" })
+                @Html.DropDownListFor(m => m.Filter.Currency, Model.Currencies, new { @class = "span4" })
+            </li>
+            <li class="divider"></li>
+            <li class="row-fluid">
+                <div class="span6" style="line-height: 30px;">Кімнат:</div>
+                @Html.DropDownListFor(m => m.Filter.RoomsCount, Model.RoomsNumbers, new { @class = "span6" })
+            </li>
+            <li class="row-fluid" id="showSearch" style="cursor:pointer;">
+                <i class="icon-plus"></i>
+                <span >Детальний пошук</span>
+            </li>
+            <li class="row-fluid" id="hideSearch" style="cursor:pointer;">
+                <i class="icon-minus"></i>
+                <span>Стислий пошук</span>
+            </li>
+            <div id="filterdetails" style="overflow:hidden;">
+            <li class="divider"></li>
+            <li class="row-fluid">Площа:</li>
+            <li class="row-fluid">
+                @Html.TextBoxFor(m => m.Filter.StartTotalSquare, new { @class = "span4", placeholder = "від" })
+                @Html.TextBoxFor(m => m.Filter.EndTotalSquare, new { @class = "span4", placeholder = "до" })
+                @Html.DropDownListFor(m => m.Filter.TotalSquareUnit, Model.SquareUnits, new { @class = "span4" })
+            </li>
+            <li class="divider"></li>
+            <li class="row-fluid">
+                <div class="span6" style="line-height: 30px;">@RielAp.Translation.Translation.ApartmentDetailsPageHeatingTypeLabel:</div>
+                @Html.DropDownListFor(m => m.Filter.HeatingType, Model.HeatingTypes, new { @class = "span6" })
+            </li>
+            <li class="divider"></li>
+            <li class="row-fluid">
+                <div class="span6" style="line-height: 30px;">@RielAp.Translation.Translation.ApartmentDetailsPageHotWaterTypeLabel:</div>
+                @Html.DropDownListFor(m => m.Filter.HotWaterType, Model.HotWaterTypes, new { @class = "span6" })
+            </li>
+            <li class="divider"></li>
+            <li class="row-fluid">
+                <div class="span6" style="line-height: 30px;">@RielAp.Translation.Translation.ApartmentDetailsPagePlaceForCarLabel:</div>
+                @Html.DropDownListFor(m => m.Filter.PlaceForCar, Model.PlacesForCar, new { @class = "span6" })
+            </li>
+            <li class="divider"></li>
+            <li class="row-fluid">
+                <div class="span6" style="line-height: 30px;">@RielAp.Translation.Translation.ApartmentDetailsPageBalconyLabel:</div>
+                @Html.DropDownListFor(m => m.Filter.Balcony, Model.BalconyAvailable, new { @class = "span6" })
+            </li>
+            <li class="divider"></li>
+            <li class="row-fluid">
+                <div class="span6" style="line-height: 30px;">@RielAp.Translation.Translation.ApartmentDetailsPageEntranceFromLabel:</div>
+                @Html.DropDownListFor(m => m.Filter.EntranceFrom, Model.EntranceFromTypes, new { @class = "span6" })
+            </li>
+            <li class="divider"></li>
+            <li class="row-fluid">
+                <div class="span6" style="line-height: 30px;">@RielAp.Translation.Translation.ApartmentDetailsPageEntranceInLabel:</div>
+                @Html.DropDownListFor(m => m.Filter.EntranceIn, Model.EntranceInTypes, new { @class = "span6" })
+            </li>
+
+            <li class="divider"></li>
+            
+            <li class="row-fluid">Поверх:</li>
+            <li class="row-fluid">
+                <label class="checkbox">
+                    @Html.CheckBoxFor(m => m.Filter.NotFirstFloor)
+                    Не перший
+                </label>
+            </li>
+            <li class="row-fluid">
+                <label class="checkbox">
+                    @Html.CheckBoxFor(m => m.Filter.NotLastFloor)
+                    Не останній
+                </label>
+            </li>
+            </div>
+            <li class="divider"></li>
+            <li class="row-fluid">
+                <button type="submit" class="btn btn-primary span12"><i class="icon-search icon-white"></i>Показати</button>
+            </li>
+            <li class="divider"></li>
+            @if (Model.Filter.IsNotEmpty())
+            {
+                <li class="row-fluid">
+                    <div>
+                        <a class="btn btn-danger span12" href="@Url.Action("ClearApartmentFilter", new { type = ViewBag.Type, viewtype = ViewBag.ViewType })">Стерти фільтр</a>
+                    </div>
+                </li>
+            }
+
+        </ul>
+    </div>
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var addressFilter = new AddressFilter("@Url.Action("GetApartmentsAdministrativeAreas", "Address")", "@Url.Action("GetApartmentsSubAdministrativeAreas", "Address")", "@Url.Action("GetApartmentsLocalities", "Address")", "@Url.Action("GetApartmentsDistricts", "Address")")
+        addressFilter.init("@Model.Filter.Address.AddressType", "@Model.Filter.Address.AdministrativeArea", "@Model.Filter.Address.SubAdministrativeArea", "@Model.Filter.Address.LocalityName", "@Model.Filter.Address.District");
+
+        $("#filterdetails").data("realHeight", $("#filterdetails").height() + 5);
+        if (Cookie.getCookie('showDetails') != "true") {
+            $("#filterdetails").css({height: "0px" });
+            $('#showSearch').show();
+            $('#hideSearch').hide();
+        }
+        else {
+            $('#showSearch').hide();
+            $('#hideSearch').show();
+        }
+
+        $('#showSearch').click(function () {
+            var div = $("#filterdetails");
+            div.animate({ height: div.data("realHeight") }, 600);
+            $('#showSearch').hide();
+            $('#hideSearch').show();
+            var c = new Cookie('showDetails', true);
+            Cookie.setCookie(c);
+        });
+
+        $('#hideSearch').click(function () {
+            $("#filterdetails").animate({ height: 0 }, 600);
+            $('#showSearch').show();
+            $('#hideSearch').hide();
+            var c = new Cookie('showDetails', false);
+            Cookie.setCookie(c);
+        });
+    });
+</script>
+    

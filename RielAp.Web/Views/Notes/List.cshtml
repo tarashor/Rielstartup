@@ -1,0 +1,47 @@
+﻿@using RielAp.Translation;
+@model IEnumerable<RielAp.Domain.Models.Note>
+
+@{
+    ViewBag.Title = Translation.ListNotesTitle;
+    ViewBag.HasNote = true;
+    ViewBag.CurrentPage = NavigationPage.Notices;
+}
+
+
+@if (TempData["message"] != null) {
+    <div class="alert alert-error">@TempData["message"]</div>
+}
+<table class="table">
+    <tr>
+        <th>
+             @Translation.ListNotesNameLabel
+        </th>
+        <th>
+            @Translation.ListNotesAnnouncementNumberLabel
+        </th>
+        <th>
+            
+        </th>
+        <th>
+            
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @item.Name
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Announcements.Count)
+        </td>
+        <td>
+            @Html.ActionLink(Translation.ListNotesViewActionLabel, "ApartmentsInNote", new { id = item.NoteId }, new {@class="btn btn-primary" })
+        </td>
+        <td>
+            @Html.ActionLink(Translation.ListNotesDeleteActionLabel, "DeleteNote", new { id = item.NoteId }, new {@class="btn btn-primary" })
+        </td>
+    </tr>
+}
+
+</table>

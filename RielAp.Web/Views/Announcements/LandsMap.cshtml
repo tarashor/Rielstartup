@@ -1,0 +1,38 @@
+﻿@using RielAp.Web.Utils
+@model RielAp.Web.Models.LandsViewModel
+
+@{
+    ViewBag.Title = RielAp.Translation.Translation.LandsMapTitle;
+    ViewBag.CurrentPage = NavigationPage.Lands;
+    Layout = "~/Views/Shared/_LandsLayout.cshtml";
+}
+
+    @foreach(RielAp.Domain.Models.Announcement announcement in Model.Announcements){
+        RielAp.Domain.Models.LandAnnouncement land = announcement as RielAp.Domain.Models.LandAnnouncement;
+        <input type="hidden" name="apartments" value="@announcement.AnnouncementID" data-latitude="@announcement.Address.Latitude" @(land != null?"data-area=" + land.TotalSquare.Value.ToString() + EnumsToSelectedListItems.GetTextFromEnumValue(land.TotalSquare.Unit) :"") data-longitude="@announcement.Address.Logitude" />
+    }
+    <div id="YMapsID" style="height: 600px;"></div>
+
+@section scripts{
+    <script src="http://api-maps.yandex.ru/2.0.33/?load=package.full,package.geoQuery&lang=uk-UA" type="text/javascript"></script>
+    <script src="~/Scripts/Custom/Map.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var map = new Map("YMapsID", [49.838891, 24.017365], 12, function () {
+                $('input[name="apartments"]').each(function (index, item) {
+                    var placemark = map.addMarkToMap([$(item).data('longitude'), $(item).data('latitude')], '', $(item).data('area'), true);
+                    if (placemark) {
+                        placemark.id = $(item).val();
+                        placemark.events.add('balloonopen', function (e) {
+                            var mark = e.get('target');
+                            $.post('@Url.Action("GetLandDescription")', { id: mark.id }, function (res) {
+                                mark.properties.set('balloonContent', res.Html);
+
+                            });
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}

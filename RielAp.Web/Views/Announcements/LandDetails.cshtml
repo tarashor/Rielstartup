@@ -1,0 +1,162 @@
+﻿@using RielAp.Translation;
+@model RielAp.Domain.Models.LandAnnouncement
+
+@{
+    ViewBag.Title = Translation.LandDetailsPageTitle;
+    ViewBag.CurrentPage = NavigationPage.None;
+}
+
+<div>
+    <div class="row-fluid">
+        <div class="span6"><h4>@(Translation.LandAnnouncementLabel + " - " +  Model.Address.ToString())</h4></div>
+         <div class="span6"><div class="pull-right"> 
+            <a href="@Url.Action("Announcements", "Cabinet", new { phone = Model.User.Phone })">
+                    <span>@Model.User.Username</span>    
+                </a>
+                <strong>
+                    :
+                <span class="bfh-phone" data-format="+dd (ddd) ddd-dddd" data-number="@Model.User.Phone"></span>
+                @foreach (RielAp.Domain.Models.MobileNumber mn in Model.User.AdditionalNumbers) { 
+                    <span>, </span>
+                    <span class="bfh-phone" data-format="+dd (ddd) ddd-dddd" data-number="@mn.Number"></span>
+                }
+                </strong>
+                           </div></div>
+    </div>
+    @if (Model.Photos.Count > 0){
+    <div class="row-fluid">
+        <div class="span12" style="position:relative; height:100px;">
+            <div id="photoCarousel">
+                    @{
+                        var photos = Model.Photos.OrderBy(p => p.PhotoId);
+                        foreach (var photo in photos)
+                        {
+                            <div class="photoContainer" data-id="@photo.PhotoId">
+                                <a href="@photo.Url" rel="lightbox-photos"><img class="photo" src="@photo.Url" /></a>
+                            </div>
+                        }
+                    }
+            </div>
+        </div>
+    </div>
+    }
+
+    <div class="row-fluid" style="margin:7px;">
+        <div class="span12">
+            <button class="btn actionNoteBtn" data-isAdded="false" data-apartmentId="@Model.AnnouncementID">@RielAp.Translation.Translation.NoteAddLabel</button>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span6">
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <td style="width: 150px;">
+                            @Translation.ApartmentDetailsPagePriceLabel
+                        </td>
+
+                        <td style="font-weight:bold;">
+                            @Html.DisplayFor(model => model.Price) @EnumsToSelectedListItems.GetTextFromEnumValue(Model.Currency)
+                        </td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            @Translation.ApartmentDetailsPageSquareLabel
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(model => model.TotalSquare.Value) @EnumsToSelectedListItems.GetTextFromEnumValue(Model.TotalSquare.Unit)
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            @Translation.LandsDetailsPageApplyTypeLabel
+                        </td>
+
+                        <td>
+                            @EnumsToSelectedListItems.GetTextFromEnumValue(Model.ApplyType)
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            @Translation.ApartmentDetailsPageNoticeLabel
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(model => model.Notice)
+                        </td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                             @Translation.ApartmentDetailsPageCreationDateLabel
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(model => model.Created)
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="span6">
+            <div id="YMapsID" style="height: 500px;"></div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=uk-UA" type="text/javascript"></script>
+    @Scripts.Render("~/bundles/details")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var model = new Details($('#photoCarousel'), [@Model.Address.Logitude, @Model.Address.Latitude], function () {
+            });
+            $('.actionNoteBtn').each(function (index, item) {
+                var apartmentId = $(item).attr('data-apartmentId');
+                $(item).attr('data-isAdded', Note.isAnnouncementIdAddedAlready(apartmentId));
+                applyState(item);
+            });
+
+            $('.actionNoteBtn').click(function () {
+                var btn = this;
+                var state = $(btn).attr('data-isAdded');
+                var apartmentId = $(btn).attr('data-apartmentId');
+                if (state.toLowerCase() == "false") {
+                    Note.addAnnouncementId(apartmentId);
+                    $(btn).attr('data-isAdded', true);
+                    applyState(btn);
+                }
+                else {
+                    Note.removeAnnouncementId(apartmentId);
+                    $(btn).attr('data-isAdded', false);
+                    applyState(btn);
+                }
+            });
+        });
+
+        function applyState(btn) {
+            var state = $(btn).attr('data-isAdded');
+            if (state.toLowerCase() == "true") {
+                $(btn).removeClass("btn-success");
+                $(btn).addClass("btn-danger");
+                $(btn).text("@RielAp.Translation.Translation.NoteRemoveLabel");
+            }
+            else {
+                $(btn).removeClass("btn-danger");
+                $(btn).addClass("btn-success");
+                $(btn).text("@RielAp.Translation.Translation.NoteAddLabel");
+            }
+        };
+    </script>
+}
+

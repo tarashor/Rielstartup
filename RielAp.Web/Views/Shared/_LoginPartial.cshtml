@@ -1,0 +1,13 @@
+﻿@if (Request.IsAuthenticated) {
+    <text>
+        @RielAp.Translation.Translation.HelloMessageLabel <a href="@Url.Action("EditPhones", "Account")" class="navbar-link">@RielAp.Web.Infrastructure.CurrentUser.Instance.Name!</a>
+        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", style="display: inline;" })) {
+            <a href="javascript:document.getElementById('logoutForm').submit()" class="navbar-link">@RielAp.Translation.Translation.LogoutMessage</a>
+        }
+    </text>
+}
+else{
+    @Html.ActionLink(RielAp.Translation.Translation.LoginMessage, "Login", "Account", new {returnUrl = Request.Path}, new {@class = "navbar-link",  style="display: inline; margin-right:5px;"})
+    @RielAp.Translation.Translation.OrLabel
+    @Html.ActionLink(RielAp.Translation.Translation.RegisterLabel, "Register", "Account", new {returnUrl = Request.Path}, new {@class = "navbar-link",  style="display: inline; margin-left:5px;"})
+}

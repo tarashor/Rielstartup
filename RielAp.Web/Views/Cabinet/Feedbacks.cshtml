@@ -1,0 +1,23 @@
+﻿@using RielAp.Translation;
+@using RielAp.Domain.Models;
+@model IEnumerable<Feedback>
+
+@{
+    Layout = "~/Views/Shared/_CabinetLayout.cshtml";
+    ViewBag.CabinetCurrentTab = CabinetViewType.Feedbacks;
+}
+
+ @Html.ActionLink(Translation.CabinetAddFeedbackLabel, "AddFeedback", new { phone=ViewBag.UserPhone}, new {@class="btn btn-primary", style="margin: 10px 7px 10px 7px;" })
+                @if(Model.Count()>0){
+                <table class="table">
+                    @foreach (var item in Model)
+                    {
+                        @Html.Partial("_Feedback", item)
+                    }        
+                </table>
+                }
+                else{
+                    <div style="width: 100%; display: block; text-align:center; font-size: 22px; font-style: italic; color: #777;">
+                        @RielAp.Translation.Translation.CabinetNoFeedbacksInUser
+                    </div>
+                }

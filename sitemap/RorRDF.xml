@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://rorweb.com/0.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <Resource rdf:about="sitemap">
+    <type>SiteMap</type>
+    <title>Нерухомість</title>
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fcabinet%2faddfeedback</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fcabinet%2faddfeedback</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/cabinet/addfeedback?phone=380978600734</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2ffeedback%2fadd</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2ffeedback%2fadd</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f4</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/cabinet/addfeedback?phone=380973064570</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f4</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/cabinet/addfeedback?phone=380974482472</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fcabinet%2fuserprofile</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fcabinet%2ffeedbacks</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fcabinet%2ffeedbacks</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fcabinet%2fuserprofile</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f9</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f9</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f10</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/cabinet/feedbacks?phone=380978600734</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f10</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/cabinet/userprofile?phone=380978600734</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f8</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f8</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fhousedetails%2f15</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fhousedetails%2f15</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=address&amp;amp;viewtype=map</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=address</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=date&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=addressdescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=datedescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=address&amp;amp;viewtype=map</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=address</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=datedescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=date&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=addressdescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2flanddetails%2f11</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2flanddetails%2f11</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2flanddetails%2f12</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2flanddetails%2f12</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=address</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=datedescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=date&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=address&amp;amp;viewtype=map</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=datedescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=addressdescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=address&amp;amp;viewtype=map</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=address</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2faccount%2fforgetpassword</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2faccount%2fforgetpassword</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=date&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=addressdescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2faccount%2flicense</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2faccount%2flicense</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/feedback/add</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2ffeedback%2findex</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2ffeedback%2findex</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f2</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f2</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f7</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f7</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f3</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f3</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f5</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f5</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f1</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/apartmentdetails/4</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f1</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/cabinet/feedbacks?phone=380974482472</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/cabinet/userprofile?phone=380974482472</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fapartmentdetails%2f6</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fapartmentdetails%2f6</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/cabinet/feedbacks?phone=380973064570</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/cabinet/userprofile?phone=380973064570</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fcabinet%2fannouncements</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=rentshort&amp;amp;order=address&amp;amp;viewtype=map</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fcabinet%2fannouncements</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/apartmentdetails/9</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=rentshort&amp;amp;order=address</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=rentshort&amp;amp;order=datedescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=rentshort&amp;amp;order=date&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=rentshort&amp;amp;order=addressdescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/cabinet/announcements?phone=380978600734</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=rent&amp;amp;order=address&amp;amp;viewtype=map</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/apartmentdetails/8</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/apartmentdetails/10</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=rent&amp;amp;order=datedescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=rent&amp;amp;order=date&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=rent&amp;amp;order=addressdescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=rent&amp;amp;order=address</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fnotes%2findex</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fnotes%2findex</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?page=1</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/housedetails/15</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=address&amp;amp;viewtype=map</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=datedescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=address</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=date&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=addressdescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=rentshort&amp;amp;order=address&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=rent&amp;amp;order=address&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?page=1</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/landdetails/12</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2fhouses</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2fhouses</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=address&amp;amp;viewtype=map</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=address</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=datedescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/landdetails/11</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=rentshort&amp;amp;order=address&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=date&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=addressdescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2faccount%2fregister</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2faccount%2fregister</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=rent&amp;amp;order=address&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2fannouncements%2flands</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2fannouncements%2flands</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/forgetpassword</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2faccount%2flogin</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/license</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2faccount%2flogin</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/feedback/index</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?page=1</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/apartmentdetails/7</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/apartmentdetails/2</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/apartmentdetails/3</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/cabinet/announcements?phone=380974482472</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/apartmentdetails/5</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/apartmentdetails/1</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/cabinet/announcements?phone=380973064570</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/apartmentdetails/6</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=buy&amp;amp;order=address&amp;amp;viewtype=map</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=buy&amp;amp;order=address</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=buy&amp;amp;order=datedescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=buy&amp;amp;order=date&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=rentshort&amp;amp;order=address&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=rent&amp;amp;order=address&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=buy&amp;amp;order=addressdescending&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/notes/index</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/houses?type=buy&amp;amp;order=address&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/announcements/lands?type=buy&amp;amp;order=address&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/?type=buy&amp;amp;order=address&amp;amp;viewtype=list</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/register?returnurl=%2f</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+  <Resource>
+    <url>http://aparts.in.ua/account/login?returnurl=%2f</url>
+    <resourceOf rdf:resource="sitemap" />
+  </Resource>
+</rdf:RDF>

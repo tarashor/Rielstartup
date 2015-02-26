@@ -1,0 +1,22 @@
+﻿@using RielAp.Translation;
+@model RielAp.Domain.Models.LandAnnouncement
+
+@{
+    ViewBag.Title = Translation.EditLandAnnouncementTitle;
+    Layout = "~/Views/Shared/_EditAnnouncementLayout.cshtml";
+}
+<h4 class="row-fluid">
+    @Translation.AnnouncementEditApartmentTotalSquareLabel
+</h4>
+<div class="controls controls-row">
+    @Html.TextBoxFor(model => model.TotalSquare.Value, new { @class = "span9" })
+    @Html.DropDownListFor(model => model.TotalSquare.Unit, EnumsToSelectedListItems.GetSquareUnitsList(), new { @class = "span3" })
+</div>
+
+<h4 class="row-fluid">
+    @Translation.AnnouncementEditLandApplyTypeLabel
+</h4>
+<div class="controls controls-row">
+    @Html.DropDownListFor(model => model.ApplyType, EnumsToSelectedListItems.GetLandApplyTypeList(), new { @class = "span12" })
+</div>
+

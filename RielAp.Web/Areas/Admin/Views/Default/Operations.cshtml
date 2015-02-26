@@ -1,0 +1,50 @@
+﻿@using RielAp.Domain.Models
+@model RielAp.Web.Areas.Admin.Models.UsersViewModel
+@{
+    ViewBag.Title = "Operations";
+    ViewBag.AdminCurrentPage = RielAp.Web.Areas.Admin.Models.AdminViewType.Additional;
+    Layout = "~/Areas/Admin/Views/Shared/_DefaultLayout.cshtml";
+}
+
+<div class="progress progress-striped active" id="progress" style="display: none; margin: 20px;">
+    <div class="bar" style="width: 100%;"></div>
+</div>
+
+<div class="alert alert-success" id="status" style="display: none; margin: 20px;">Generated!</div>
+
+<button class="btn btn-primary"  id="generateBtn">Generate</button>
+<button class="btn btn-primary"  id="sitemapBtn">Generate sitemap</button>
+<button class="btn btn-primary"  id="registerBtn">Generate register date</button>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#generateBtn').click(function () {
+            $('#progress').show();
+            $.post('@Url.Action("GenerateData", "Default")', null, function (res) {
+                if (res.Done) {
+                    $('#progress').hide();
+                    $('#status').show();
+                }
+            });
+        });
+        $('#sitemapBtn').click(function () {
+            $('#progress').show();
+            $.post('@Url.Action("GenerateSitemap", "Default")', null, function (res) {
+                if (res.Done) {
+                    $('#progress').hide();
+                    $('#status').show();
+                }
+            });
+        });
+
+        $('#registerBtn').click(function () {
+            $('#progress').show();
+            $.post('@Url.Action("GenerateRegisterDates", "Default")', null, function (res) {
+                if (res.Done) {
+                    $('#progress').hide();
+                    $('#status').show();
+                }
+            });
+        });
+    });
+</script>

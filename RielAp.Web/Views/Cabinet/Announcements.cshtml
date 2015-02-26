@@ -1,0 +1,84 @@
+﻿@using RielAp.Translation;
+@using RielAp.Domain.Models;
+@model IEnumerable<Announcement>
+
+@{
+    Layout = "~/Views/Shared/_CabinetLayout.cshtml";
+    ViewBag.CabinetCurrentTab = CabinetViewType.Announcements;
+    string type = "Apartment";
+}
+
+@if (ViewBag.IsMyCabinet)
+{
+    <div class="alert alert-info" style="margin: 10px 7px 10px 7px;">
+        @Html.Raw(string.Format(Translation.CabinetAnnouncementLeft, ViewBag.LeftAnnouncements))
+    </div>
+    
+    <div class="btn-group" style="margin: 10px 7px 10px 7px;">
+        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+            @Translation.CabinetAddAnnouncement
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" style="z-index: 1000;">
+            <li>@Html.ActionLink(Translation.CabinetAddApartmentLabel, "AddApartment")</li>
+            <li>@Html.ActionLink(Translation.CabinetAddLandLabel, "AddLand")</li>
+            <li>@Html.ActionLink(Translation.CabinetAddHouseLabel, "AddHouse")</li>
+        </ul>
+    </div>
+}
+
+@if (Model.Count() > 0)
+{
+    <table class="table">
+        @foreach (var item in Model)
+        {
+            <tr>
+                @{
+            ApartmentAnnouncement ap = item as ApartmentAnnouncement;
+
+            if (ap != null)
+            {
+                type = "Apartment";
+                    @Html.Partial("_Apartment", ap);
+            }
+            else
+            {
+                HouseAnnouncement h = item as HouseAnnouncement;
+                if (h != null)
+                {
+                    type = "House";
+                    @Html.Partial("_House", h);
+                }
+                else
+                {
+                    LandAnnouncement l = item as LandAnnouncement;
+                    if (l != null)
+                    {
+                        type = "Land";
+                        @Html.Partial("_Land", l);
+                    }
+                }
+            }
+                }
+
+                <td style="width: 100px">
+                    <div class="btn-group btn-group-vertical">
+                        @if (ViewBag.IsMyCabinet)
+                        {
+                            @Html.ActionLink(Translation.CabinetEditAnnouncementLabel, "Edit" + type, new { id = item.AnnouncementID }, new { @class = "btn" })
+                            @Html.ActionLink(Translation.CabinetDeleteAnnouncementLabel, "DeleteAnnouncement", new { id = item.AnnouncementID }, new { @class = "btn" })
+                        }
+                        @Html.ActionLink(Translation.CabinetDetailsAnnouncementLabel, type + "Details", "Announcements", new { id = item.AnnouncementID }, new { @class = "btn" })
+                    </div>
+                </td>
+
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <div style="width: 100%; display: block; text-align: center; font-size: 22px; font-style: italic; color: #777;">
+        @RielAp.Translation.Translation.CabinetNoAnnouncementsInUser
+    </div>
+}

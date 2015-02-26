@@ -1,0 +1,28 @@
+﻿@model RielAp.Domain.Models.Email
+
+<tr>
+    <td style="width:160px; border-right: 1px solid #c3c1c1;">
+            <div>@Model.Author</div>
+        </td>
+        <td>
+            <div style="border-bottom: 1px solid #c3c1c1;">
+                <strong>@Model.Subject</strong>
+                <span class="pull-right">@Model.Created.ToString()</span>
+            </div>
+            <div style="padding:5px; background-color:#ddd">
+                @Model.Body
+            </div>
+            <div style="padding:10px 0px 10px 0px;">
+                 @Html.ActionLink(RielAp.Translation.Translation.FeedbackAddButtonLabel, "Add", new { parentEmailId = Model.Id }, new { @class = "btn" })
+            </div>
+        </td>
+    </tr>
+@if (Model.Responses.Count() > 0) { 
+    <tr>
+        <td colspan="2">
+            <div style="margin-left:50px;">
+                @Html.Partial("_EmailsList", Model.Responses);
+            </div>    
+        </td>
+    </tr>
+}

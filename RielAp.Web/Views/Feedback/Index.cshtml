@@ -1,0 +1,19 @@
+﻿@model FeedbackListModel
+@{
+    ViewBag.Title = RielAp.Translation.Translation.FeedbackListLabel;
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink(RielAp.Translation.Translation.FeedbackAddButtonLabel, "Add", null, new {@class="btn btn-primary"})
+</p>
+
+@if (Model.FeedbacksPerPage.Count()>0){
+    @Html.Partial("_EmailsList", Model.FeedbacksPerPage);
+}
+else{
+    <div style="width: 100%; display: block; text-align:center; font-size: 22px; font-style: italic; color: #777;">@RielAp.Translation.Translation.FeedbackNoFeedbacksYet</div>
+}
+
+@Html.PageLinks(Model.Page, x => Url.Action("Index", new {page = x}))

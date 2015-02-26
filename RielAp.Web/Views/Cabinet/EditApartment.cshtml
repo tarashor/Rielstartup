@@ -1,0 +1,89 @@
+﻿@using RielAp.Translation;
+@model RielAp.Domain.Models.ApartmentAnnouncement
+
+@{
+    ViewBag.Title = Translation.EditApartmentAnnouncementTitle;
+    Layout = "~/Views/Shared/_EditAnnouncementLayout.cshtml";
+}
+
+                    <h4 class="row-fluid">
+                        @Translation.ApartmentDetailsPageRoomsCountLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.TextBoxFor(model => model.RoomsNumber, new { @class = "span12" })
+                    </div>
+
+                    <h4 class="row-fluid">
+                        @Translation.AnnouncementEditApartmentTotalSquareLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.TextBoxFor(model => model.TotalSquare.Value, new { @class = "span9" })
+                        @Html.DropDownListFor(model => model.TotalSquare.Unit, EnumsToSelectedListItems.GetSquareUnitsList(), new { @class = "span3" })
+                    </div>
+
+                    <h4 class="row-fluid">
+                        @Translation.AnnouncementEditApartmentLivingSquareLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.TextBoxFor(model => model.LivingSquare.Value, new { @class = "span9" })
+                        @Html.DropDownListFor(model => model.LivingSquare.Unit, EnumsToSelectedListItems.GetSquareUnitsList(), new { @class = "span3" })
+                    </div>
+
+                    <h4 class="row-fluid">
+                        @Translation.ApartmentDetailsPageFloorLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.TextBoxFor(model => model.Floor, new { @class = "span6" }) <span class="span1" style="text-align: center;">з</span> @Html.TextBoxFor(model => model.MaxFloor, new { @class = "span5" })
+                    </div>
+
+                    <h4 class="row-fluid">
+                        @Translation.ApartmentDetailsPageWallMaterialsLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.DropDownListFor(model => model.WallMaterial, EnumsToSelectedListItems.GetWallMaterialsList(), new { @class = "span12" })
+                    </div>
+
+                    <h4 class="row-fluid">
+                        @Translation.ApartmentDetailsPageFloorMaterialsLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.DropDownListFor(model => model.FloorMaterial, EnumsToSelectedListItems.GetFloorMaterialsList(), new { @class = "span12" })
+                    </div>
+                    <h4 class="row-fluid">
+                        @Translation.ApartmentDetailsPageHeatingTypeLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.DropDownListFor(model => model.HeatingType, EnumsToSelectedListItems.GetHeatingTypeList(), new { @class = "span12" })
+                    </div>
+                    <h4 class="row-fluid">
+                        @Translation.ApartmentDetailsPageHotWaterTypeLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.DropDownListFor(model => model.HotWaterType, EnumsToSelectedListItems.GetHotWaterTypeList(), new { @class = "span12" })
+                    </div>
+                    <h4 class="row-fluid">
+                        @Translation.ApartmentDetailsPagePlaceForCarLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.DropDownListFor(model => model.PlaceForCar, EnumsToSelectedListItems.GetPresentTypeValueList(), new { @class = "span12" })
+                    </div>
+                    <h4 class="row-fluid">
+                        @Translation.ApartmentDetailsPageBalconyLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.DropDownListFor(model => model.Balcony, EnumsToSelectedListItems.GetPresentTypeValueList(), new { @class = "span12" })
+                    </div>
+                    <h4 class="row-fluid">
+                        @Translation.ApartmentDetailsPageEntranceFromLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.DropDownListFor(model => model.EntranceFrom, EnumsToSelectedListItems.GetEntranceFromList(), new { @class = "span12" })
+                    </div>
+                    <h4 class="row-fluid">
+                        @Translation.ApartmentDetailsPageEntranceInLabel
+                    </h4>
+                    <div class="controls controls-row">
+                        @Html.DropDownListFor(model => model.EntranceIn, EnumsToSelectedListItems.GetEntranceInList(), new { @class = "span12" })
+                    </div>
+                    
+ 

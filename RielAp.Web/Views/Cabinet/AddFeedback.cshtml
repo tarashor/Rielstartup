@@ -1,0 +1,47 @@
+﻿@model RielAp.Domain.Models.Feedback
+@using RielAp.Translation;
+
+@{
+    ViewBag.Title = Translation.FeedbackAddTitle;
+}
+
+
+<fieldset>
+    <legend>@ViewBag.Title</legend>
+    @if (!Html.ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-error">
+            @foreach (var modelError in Html.ViewData.ModelState.SelectMany(keyValuePair => keyValuePair.Value.Errors))
+            {
+                <div>@modelError.ErrorMessage</div>
+            }
+        </div>
+    }
+    @using (Html.BeginForm("AddFeedback", "Cabinet", null, FormMethod.Post, new { @class = "form-horizontal", style = "width: 800px;  margin: auto;" }))
+    {
+        @Html.HiddenFor(m=>m.UserId)
+
+        <div class="control-group">
+            <label class="control-label" for="Author">@Translation.FeedbackAuthorNameLabel</label>
+            <div class="controls">
+                @Html.TextBoxFor(m => m.Author, new { placeholder = Translation.FeedbackAuthorNameLabel, style="width: 100%;" })
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label" for="Body">@Translation.FeedbackBodyLabel</label>
+            <div class="controls">
+                @Html.TextAreaFor(m => m.Text, new { placeholder = Translation.FeedbackBodyLabel, style="width: 100%;" })
+            </div>
+        </div>
+            
+        <div class="control-group" id="submitContainer">
+            <div class="controls">
+                <input type="submit" class="btn btn-success" value="@Translation.FeedbackAddButtonLabel">
+                @Html.ActionLink(Translation.FeedbackBackToListButtonLabel, "Index",null, new{@class="btn btn-danger"})
+            </div>
+        </div>
+    
+    }
+
+</fieldset>

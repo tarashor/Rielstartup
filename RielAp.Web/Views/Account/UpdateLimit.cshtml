@@ -1,0 +1,75 @@
+﻿@using RielAp.Translation;
+@using RielAp.Domain.Models;
+@model UpdateLimitModel
+
+@{
+    Layout = "~/Views/Shared/_CabinetLayout.cshtml";
+    ViewBag.CabinetCurrentTab = CabinetViewType.AccountUpdate;
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.InfoMessage))
+{ 
+    <div class="alert alert-info">@ViewBag.InfoMessage</div>
+}
+
+<div class="alert alert-info">
+    <p>@Translation.YourProfileLabel : <strong>@Model.CurrentUser.Profile.ProfileName</strong></p>
+    <p>@Translation.ProfilesExpireLabel : <strong>@(Model.CurrentUser.ProfileExpires.HasValue?Model.CurrentUser.ProfileExpires.Value.ToShortDateString():Translation.ProfilesExpireNeverLabel)</strong></p>
+</div>
+
+<div style="text-align:center; font-weight:bold; margin:5px; font-size:22px; font-style:italic;">@Translation.ProfilesListLabel:</div>
+
+@foreach (Profile profile in Model.Profiles) { 
+    string state = string.Empty;
+    string btnstate = string.Empty;
+    string btnlabel = Translation.ProfileApplyButtonLabel;
+    if (profile.Priority < Model.CurrentUser.Profile.Priority){
+        state = "disabled";
+        btnstate = "disabled";
+    }
+    else
+    {
+        if (profile.Priority == Model.CurrentUser.Profile.Priority){
+            state = "active";
+            btnlabel = Translation.ProfileContinueButtonLabel;
+        }
+    }
+
+    System.Xml.XmlDocument doc = LiqPay.GetXmlDocument(profile.Price,
+                "UAH",
+                Url.Action("UpdateLimitSuccess", "Account", new { }, this.Request.Url.Scheme),
+                Url.Action("UpdateLimitServer", "Account", new { }, this.Request.Url.Scheme),
+                Guid.NewGuid().ToString(),
+                Translation.UpdateProfileToLable + profile.ProfileName,
+                "+" + User.Identity.Name,
+                "card",
+                profile.ProfileId);
+    
+    string operation = LiqPay.GetOperation_xml(doc);
+    string signature = LiqPay.GetSignature(doc);
+        <div class="profile @state">
+            <div class="header" >@profile.ProfileName</div>
+            <div>@Translation.ProfileMaxAnnouncementsLabel : @profile.MaxAnnouncements</div>
+            <div>@Translation.ProfileMaxPhotosPerAnnouncementsLabel : @profile.MaxPhotosPerAnnouncements</div>
+            <div>@Translation.ProfilePriceLabel : @profile.Price @Translation.HryvnaLabel</div>
+            <form style="display:inline" method=POST action="https://www.liqpay.com/?do=clickNbuy" id="f@(profile.ProfileId)">
+                <input type=hidden name="operation_xml" value="@operation">
+                <input type=hidden name="signature" value="@signature">
+            </form>
+            @if (!profile.IsBasic){
+                <button class="btn btn-primary @btnstate applybtn" id="@(profile.ProfileId)">@btnlabel</button>
+            }
+        </div>
+}
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.applybtn').click(function () {
+            if (!$(this).hasClass('disabled')) {
+                $('#f' + $(this).attr('id')).submit();
+            }
+        });
+    });
+</script>
+

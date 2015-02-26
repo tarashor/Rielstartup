@@ -1,0 +1,56 @@
+﻿@using RielAp.Domain.Models;
+@model RielAp.Web.Models.AnnouncementsViewModel
+@{
+    string detailsAction = "ApartmentDetails";
+    }
+@if (Model.Announcements.Count()>0){
+<table class="table">
+    
+@foreach (var item in Model.Announcements)
+{
+    <tr>
+        @{
+            ApartmentAnnouncement ap = item as ApartmentAnnouncement;
+
+            if (ap != null)
+            {
+                    @Html.Partial("_Apartment", ap);
+            }
+            else
+            {
+                HouseAnnouncement h = item as HouseAnnouncement;
+                if (h != null)
+                {
+                        @Html.Partial("_House", h);
+                        detailsAction = "HouseDetails";
+                }
+                else
+                {
+                    LandAnnouncement l = item as LandAnnouncement;
+                    if (l != null)
+                    {
+                            @Html.Partial("_Land", l);
+                            detailsAction = "LandDetails";
+                    }
+                }
+            }
+        }
+        
+        <td style="width:92px">
+            <div class="btn-group btn-group-vertical">
+                <button class="btn actionNoteBtn" data-isAdded="false" data-apartmentId="@item.AnnouncementID">@RielAp.Translation.Translation.NoteAddLabel</button>
+                @Html.ActionLink(@RielAp.Translation.Translation.CabinetDetailsAnnouncementLabel, detailsAction, "Announcements", new {id=item.AnnouncementID}, new{@class="btn btn-primary"})
+            </div>
+        </td>
+    </tr>
+}
+
+</table>
+}
+else{
+    <div style="width: 100%; display: block; text-align:center; font-size: 22px; font-style: italic; color: #777;">
+        @RielAp.Translation.Translation.NoSearchResults
+    </div>
+}
+
+    

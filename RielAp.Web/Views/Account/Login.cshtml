@@ -1,0 +1,59 @@
+﻿@using RielAp.Translation;
+@model RielAp.Web.Models.LoginViewModel
+@{
+    ViewBag.CurrentPage = NavigationPage.None;
+    ViewBag.Title = Translation.LoginPageTitle;
+}
+
+<fieldset>
+        <legend>@Translation.LoginPageTitle</legend>
+    @if (!Html.ViewData.ModelState.IsValid)
+    {
+    <div class="alert alert-error">
+        @foreach (var modelError in Html.ViewData.ModelState.SelectMany(keyValuePair => keyValuePair.Value.Errors))
+        {
+            <div>@modelError.ErrorMessage</div>
+        }
+    </div>
+    }
+
+    @if (TempData["LoginMessage"] != null) { 
+        <div class="alert alert-success">
+            @TempData["LoginMessage"]
+        </div>
+    }
+    
+@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", style = "width: 500px;  margin: auto;" }))
+{
+    
+        <div class="control-group">
+            <label class="control-label" for="UserName">@Translation.LoginPageUserPhone</label>
+            <div class="controls">
+                @Html.TextBoxFor(m => m.Phone, new { placeholder = Translation.LoginPageUserPhone, @class = "bfh-phone", data_format = "+38 (ddd) ddd-dddd", data_number=(Model != null ? Model.Phone:string.Empty) })
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="Password">@Translation.LoginPagePassword</label>
+            <div class="controls">
+                @Html.PasswordFor(m => m.Password, new { placeholder = Translation.LoginPagePassword })
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <p>@Html.ActionLink(Translation.ForgetPasswordLabel, "ForgetPassword", "Account")</p>
+                @*<p>@Html.ActionLink(Translation.ResendEmailAgainLabel, "SendConfirmEmail", "Account")</p>*@
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn btn-success">@Translation.LoginPageSignInButton</button>
+            </div>
+        </div>
+}
+    </fieldset>
+
+@section scripts{
+    @Scripts.Render("~/bundles/js");
+    }
+
+

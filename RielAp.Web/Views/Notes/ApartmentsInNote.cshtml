@@ -1,0 +1,13 @@
+﻿@model RielAp.Web.Models.NoteViewModel
+
+@{
+    ViewBag.Title = "ApartmentsInNote";
+    ViewBag.HasNote = true;
+    ViewBag.CurrentPage = NavigationPage.Notices;
+
+}
+
+@Html.Partial("_AnnouncementsTable", new ApartmentsListViewModel() { Announcements =  Model.Announcements})
+@Html.PageLinks(Model.Page, x => Url.Action("Apartments", new {page = x}))
+
+

@@ -1,0 +1,66 @@
+﻿@using RielAp.Translation;
+@using RielAp.Domain.Models;
+@model User
+
+@{
+    Layout = "~/Views/Shared/_CabinetLayout.cshtml";
+    ViewBag.CabinetCurrentTab = CabinetViewType.UserProfile;
+}
+
+@if (ViewBag.IsMyCabinet)
+{
+    @Html.ActionLink(Translation.CabinetUserProfileEditLabel, "UserProfile", "Account", null, new { @class="btn btn-primary", style="margin: 10px 7px 10px 7px;" })
+}
+
+<table class="table">
+    <tr>
+        <td>
+            @Translation.RegisterPageEmailLabel
+        </td>
+
+        <td style="font-weight: bold;">
+            @Html.DisplayFor(model => model.EmailAddress)
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            @Translation.RegisterPageUserNameLabel
+        </td>
+
+        <td style="font-weight: bold;">
+            @Html.DisplayFor(model => model.Username)
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            @Translation.CabinetUserProfileAnnouncementsCountLabel
+        </td>
+
+        <td style="font-weight: bold;">
+            @Html.DisplayFor(model => model.Apartments.Count)
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            @Translation.CabinetUserProfileNumbersLabel
+        </td>
+
+        <td style="font-weight: bold;">
+            <span class="bfh-phone" data-format="+dd (ddd) ddd-dddd" data-number="@Model.Phone"></span>
+            @foreach (MobileNumber mobile in Model.AdditionalNumbers)
+    { 
+        <br/>
+                <span class="bfh-phone" data-format="+dd (ddd) ddd-dddd" data-number="@mobile.Number"></span>
+        
+    }
+            
+        </td>
+
+    </tr>
+
+
+    
+</table>

@@ -1,0 +1,891 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessIsDeniedMessage" xml:space="preserve">
+    <value>Вам відмовлено в доступі</value>
+  </data>
+  <data name="AddAnnouncement" xml:space="preserve">
+    <value>Подати оголошення</value>
+  </data>
+  <data name="AddPhotoBtnLabel" xml:space="preserve">
+    <value>Додати фотографію</value>
+  </data>
+  <data name="AddressTypeCityLabel" xml:space="preserve">
+    <value>Місто</value>
+  </data>
+  <data name="AddressTypeVillargeLabel" xml:space="preserve">
+    <value>Область</value>
+  </data>
+  <data name="AnnouncementAddressAdministrativeAreaLabel" xml:space="preserve">
+    <value>Область</value>
+  </data>
+  <data name="AnnouncementAddressDistrictLabel" xml:space="preserve">
+    <value>Район</value>
+  </data>
+  <data name="AnnouncementAddressLocalityNameLabel" xml:space="preserve">
+    <value>Населений пункт</value>
+  </data>
+  <data name="AnnouncementAddressStreetLabel" xml:space="preserve">
+    <value>Вулиця</value>
+  </data>
+  <data name="AnnouncementAddressSubAdministrativeAreaLabel" xml:space="preserve">
+    <value>Район</value>
+  </data>
+  <data name="AnnouncementAddressTypeLabel" xml:space="preserve">
+    <value>Тип адреси</value>
+  </data>
+  <data name="AnnouncementBuildingNumber" xml:space="preserve">
+    <value>Номер будинку</value>
+  </data>
+  <data name="AnnouncementCityLabel" xml:space="preserve">
+    <value>Місто</value>
+  </data>
+  <data name="AnnouncementDistrictLabel" xml:space="preserve">
+    <value>Район</value>
+  </data>
+  <data name="AnnouncementEditAddress" xml:space="preserve">
+    <value>Адреса</value>
+  </data>
+  <data name="AnnouncementEditAddressInputType" xml:space="preserve">
+    <value>Ввести адресу самому</value>
+  </data>
+  <data name="AnnouncementEditApartmentLivingSquareLabel" xml:space="preserve">
+    <value>Житлова площа</value>
+  </data>
+  <data name="AnnouncementEditApartmentTotalSquareLabel" xml:space="preserve">
+    <value>Загальна площа</value>
+  </data>
+  <data name="AnnouncementEditBackButtonLabel" xml:space="preserve">
+    <value>Відмінити</value>
+  </data>
+  <data name="AnnouncementEditInfos" xml:space="preserve">
+    <value>Інформація</value>
+  </data>
+  <data name="AnnouncementEditPhotos" xml:space="preserve">
+    <value>Фотографії</value>
+  </data>
+  <data name="AnnouncementEditSaveButtonLabel" xml:space="preserve">
+    <value>Зберегти</value>
+  </data>
+  <data name="AnnouncementShowBuildingNumber" xml:space="preserve">
+    <value>Показувати номер будинку</value>
+  </data>
+  <data name="AnnouncementStreetLabel" xml:space="preserve">
+    <value>Вулиця</value>
+  </data>
+  <data name="AnnouncementType" xml:space="preserve">
+    <value>Тип оголошення</value>
+  </data>
+  <data name="ApartmentAnnouncementLabel" xml:space="preserve">
+    <value>Квартира</value>
+  </data>
+  <data name="ApartmentDetailsPageBalconyLabel" xml:space="preserve">
+    <value>Наявність балкону</value>
+  </data>
+  <data name="ApartmentDetailsPageCreationDateLabel" xml:space="preserve">
+    <value>Дата створення оголошення</value>
+  </data>
+  <data name="ApartmentDetailsPageDaysOnSiteLabel" xml:space="preserve">
+    <value>Днів на сайті</value>
+  </data>
+  <data name="ApartmentDetailsPageEntranceFromLabel" xml:space="preserve">
+    <value>Вхід з</value>
+  </data>
+  <data name="ApartmentDetailsPageEntranceInLabel" xml:space="preserve">
+    <value>Вхід у</value>
+  </data>
+  <data name="ApartmentDetailsPageFloorLabel" xml:space="preserve">
+    <value>Поверх</value>
+  </data>
+  <data name="ApartmentDetailsPageFloorMaterialsLabel" xml:space="preserve">
+    <value>Перекриття</value>
+  </data>
+  <data name="ApartmentDetailsPageHeatingTypeLabel" xml:space="preserve">
+    <value>Тип опалення</value>
+  </data>
+  <data name="ApartmentDetailsPageHotWaterTypeLabel" xml:space="preserve">
+    <value>Тип постачання гарячої води</value>
+  </data>
+  <data name="ApartmentDetailsPageNoticeLabel" xml:space="preserve">
+    <value>Примітка</value>
+  </data>
+  <data name="ApartmentDetailsPagePicturesLabel" xml:space="preserve">
+    <value>Фотографії</value>
+  </data>
+  <data name="ApartmentDetailsPagePlaceForCarLabel" xml:space="preserve">
+    <value>Місце під авто</value>
+  </data>
+  <data name="ApartmentDetailsPagePriceLabel" xml:space="preserve">
+    <value>Ціна</value>
+  </data>
+  <data name="ApartmentDetailsPageRoomsCountLabel" xml:space="preserve">
+    <value>Кількість кімнат</value>
+  </data>
+  <data name="ApartmentDetailsPageSquareLabel" xml:space="preserve">
+    <value>Площа</value>
+  </data>
+  <data name="ApartmentDetailsPageTitle" xml:space="preserve">
+    <value>Деталі</value>
+  </data>
+  <data name="ApartmentDetailsPageUserPhoneLabel" xml:space="preserve">
+    <value>Номер телефону продавця</value>
+  </data>
+  <data name="ApartmentDetailsPageWallMaterialsLabel" xml:space="preserve">
+    <value>Стіни</value>
+  </data>
+  <data name="BuySellLabel" xml:space="preserve">
+    <value>Продаж</value>
+  </data>
+  <data name="CabinetAddAnnouncement" xml:space="preserve">
+    <value>Подати оголошення</value>
+  </data>
+  <data name="CabinetAddApartmentLabel" xml:space="preserve">
+    <value>Подати оголошення про квартиру</value>
+  </data>
+  <data name="CabinetAddFeedbackLabel" xml:space="preserve">
+    <value>Додати відгук</value>
+  </data>
+  <data name="CabinetAddHouseLabel" xml:space="preserve">
+    <value>Подати оголошення про будинок</value>
+  </data>
+  <data name="CabinetAdditionalUserNumberLabel" xml:space="preserve">
+    <value>Додатковий номер телефону</value>
+  </data>
+  <data name="CabinetAddLandLabel" xml:space="preserve">
+    <value>Подати оголошення про ділянку</value>
+  </data>
+  <data name="CabinetAddUserPhoneLabel" xml:space="preserve">
+    <value>Додати номер телефону</value>
+  </data>
+  <data name="CabinetAnnouncementsListTitle" xml:space="preserve">
+    <value>Оголошення</value>
+  </data>
+  <data name="CabinetCancelUserInfoLabel" xml:space="preserve">
+    <value>Відмінити</value>
+  </data>
+  <data name="CabinetDataDeleteMessage" xml:space="preserve">
+    <value>Дані видалено</value>
+  </data>
+  <data name="CabinetDataSavedMessage" xml:space="preserve">
+    <value>Дані збережені</value>
+  </data>
+  <data name="CabinetDeleteUserPhoneLabel" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="CabinetFeedbacksListTitle" xml:space="preserve">
+    <value>Відгуки</value>
+  </data>
+  <data name="CabinetMainUserPhoneLabel" xml:space="preserve">
+    <value>Основний номер телефону</value>
+  </data>
+  <data name="MobileNumbersProfileManagerTitle" xml:space="preserve">
+    <value>Номери телефонів</value>
+  </data>
+  <data name="CabinetNoAnnouncementsInUser" xml:space="preserve">
+    <value>У даного кориcтувача відсутні оголошення</value>
+  </data>
+  <data name="CabinetNoFeedbacksInUser" xml:space="preserve">
+    <value>У даного кориcтувача відсутні відгуки</value>
+  </data>
+  <data name="CabinetSaveLabel" xml:space="preserve">
+    <value>Зберегти</value>
+  </data>
+  <data name="CabinetSaveUserInfoLabel" xml:space="preserve">
+    <value>Зберегти</value>
+  </data>
+  <data name="CabinetTitlePage" xml:space="preserve">
+    <value>Кабінет</value>
+  </data>
+  <data name="DollarLabel" xml:space="preserve">
+    <value>$</value>
+  </data>
+  <data name="EditAnnouncementAddressShowOnMapLabel" xml:space="preserve">
+    <value>Показати на карті</value>
+  </data>
+  <data name="EditApartmentAnnouncementTitle" xml:space="preserve">
+    <value>Редагування оголошення про квартиру</value>
+  </data>
+  <data name="EditApartmentApartmentTitle" xml:space="preserve">
+    <value>Квартира</value>
+  </data>
+  <data name="EditHouseAnnouncementTitle" xml:space="preserve">
+    <value>Редагування оголошення про будинок</value>
+  </data>
+  <data name="EditLandAnnouncementTitle" xml:space="preserve">
+    <value>Редагування оголошення про ділянку</value>
+  </data>
+  <data name="EntranceFromBalconyLabel" xml:space="preserve">
+    <value>З балкону</value>
+  </data>
+  <data name="EntranceFromStairCaseLabel" xml:space="preserve">
+    <value>Парадний(з сходової клітки)</value>
+  </data>
+  <data name="EntranceFromUnknownLabel" xml:space="preserve">
+    <value>Невідомо</value>
+  </data>
+  <data name="EntranceFromYardLabel" xml:space="preserve">
+    <value>З подвір'я</value>
+  </data>
+  <data name="EntranceInCorridorLabel" xml:space="preserve">
+    <value>Коридор</value>
+  </data>
+  <data name="EntranceInKitchenLabel" xml:space="preserve">
+    <value>Кухню</value>
+  </data>
+  <data name="EntranceInUnknownLabel" xml:space="preserve">
+    <value>Невідомо</value>
+  </data>
+  <data name="FeedbackAddButtonLabel" xml:space="preserve">
+    <value>Додати відгук</value>
+  </data>
+  <data name="FeedbackAddTitle" xml:space="preserve">
+    <value>Додати відгук</value>
+  </data>
+  <data name="FeedbackAuthorEmailLabel" xml:space="preserve">
+    <value>Електронна адреса автора</value>
+  </data>
+  <data name="FeedbackAuthorNameLabel" xml:space="preserve">
+    <value>Автор</value>
+  </data>
+  <data name="FeedbackBack" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FeedbackBackToListButtonLabel" xml:space="preserve">
+    <value>Назад до відгуків</value>
+  </data>
+  <data name="FeedbackBodyLabel" xml:space="preserve">
+    <value>Текст повідомлення</value>
+  </data>
+  <data name="FeedbackListLabel" xml:space="preserve">
+    <value>Відгуки</value>
+  </data>
+  <data name="FeedbackNoFeedbacksYet" xml:space="preserve">
+    <value>На даний момент відгуків немає</value>
+  </data>
+  <data name="FeedbackSubjectLabel" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+  <data name="FloorMaterialDerevoLabel" xml:space="preserve">
+    <value>Дерево</value>
+  </data>
+  <data name="FloorMaterialUnknownLabel" xml:space="preserve">
+    <value>Невідомо</value>
+  </data>
+  <data name="FloorMaterialZalizoBetonIDerevoLabel" xml:space="preserve">
+    <value>З/б і дерево</value>
+  </data>
+  <data name="FloorMaterialZalizoBetonLabel" xml:space="preserve">
+    <value>Залізо-бетон</value>
+  </data>
+  <data name="HeatingTypeCentralLabel" xml:space="preserve">
+    <value>Центральне опалення</value>
+  </data>
+  <data name="HeatingTypeGasBoilerLabel" xml:space="preserve">
+    <value>Котел</value>
+  </data>
+  <data name="HeatingTypeStoveLabel" xml:space="preserve">
+    <value>Пічка</value>
+  </data>
+  <data name="HeatingTypeUnknownLabel" xml:space="preserve">
+    <value>Невідомо</value>
+  </data>
+  <data name="HelloMessageLabel" xml:space="preserve">
+    <value>Привіт,</value>
+  </data>
+  <data name="HotWaterTypeBoilerLabel" xml:space="preserve">
+    <value>Котел</value>
+  </data>
+  <data name="HotWaterTypeCentralLabel" xml:space="preserve">
+    <value>Цетральне</value>
+  </data>
+  <data name="HotWaterTypeGeyserLabel" xml:space="preserve">
+    <value>Колонка</value>
+  </data>
+  <data name="HotWaterTypeUnknownLabel" xml:space="preserve">
+    <value>Невідомо</value>
+  </data>
+  <data name="HotWaterTypeWaterBoilerLabel" xml:space="preserve">
+    <value>Бойлер</value>
+  </data>
+  <data name="HouseAnnouncementLabel" xml:space="preserve">
+    <value>Будинок</value>
+  </data>
+  <data name="HousesDetailsPageSquareLabel" xml:space="preserve">
+    <value>Площа будинку</value>
+  </data>
+  <data name="HryvnaLabel" xml:space="preserve">
+    <value>грн.</value>
+  </data>
+  <data name="InvalidAddressMessage" xml:space="preserve">
+    <value>Будь ласка, проставте адресу правильно</value>
+  </data>
+  <data name="InvalidAnnouncementMessage" xml:space="preserve">
+    <value>Невірно введені дані</value>
+  </data>
+  <data name="LandAnnouncementLabel" xml:space="preserve">
+    <value>Ділянка</value>
+  </data>
+  <data name="LandsDetailsPageSquareLabel" xml:space="preserve">
+    <value>Площа ділянки</value>
+  </data>
+  <data name="LicensePageTitle" xml:space="preserve">
+    <value>Користувацька угода</value>
+  </data>
+  <data name="ListNotesAnnouncementNumberLabel" xml:space="preserve">
+    <value>Кількість відмічених оголошень</value>
+  </data>
+  <data name="ListNotesDeleteActionLabel" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="ListNotesNameLabel" xml:space="preserve">
+    <value>Назва</value>
+  </data>
+  <data name="ListNotesTitle" xml:space="preserve">
+    <value>Список нотатків</value>
+  </data>
+  <data name="ListNotesViewActionLabel" xml:space="preserve">
+    <value>Перегляд</value>
+  </data>
+  <data name="LoginMessage" xml:space="preserve">
+    <value>Увійти</value>
+  </data>
+  <data name="LoginPageLoginError" xml:space="preserve">
+    <value>Невірні логін або/і пароль.</value>
+  </data>
+  <data name="LoginPagePassword" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="LoginPageSignInButton" xml:space="preserve">
+    <value>Увійти</value>
+  </data>
+  <data name="LoginPageTitle" xml:space="preserve">
+    <value>Вхід</value>
+  </data>
+  <data name="LoginPageUserPhone" xml:space="preserve">
+    <value>Номер телефону</value>
+  </data>
+  <data name="LogoutMessage" xml:space="preserve">
+    <value>Вийти</value>
+  </data>
+  <data name="MailServiceMailSubject" xml:space="preserve">
+    <value>Нові квартири</value>
+  </data>
+  <data name="MainTitleAddition" xml:space="preserve">
+    <value>Сайт нерухомості</value>
+  </data>
+  <data name="NoSearchResults" xml:space="preserve">
+    <value>Вибачте, за даним запитом поки що немає оголошень</value>
+  </data>
+  <data name="NoteNamePattern" xml:space="preserve">
+    <value>Нотатка за {0}</value>
+  </data>
+  <data name="NullableBoolTextHasNoValueLabel" xml:space="preserve">
+    <value>Невідомо</value>
+  </data>
+  <data name="OrLabel" xml:space="preserve">
+    <value>або</value>
+  </data>
+  <data name="PresentTypeValueAbsentLabel" xml:space="preserve">
+    <value>Немає</value>
+  </data>
+  <data name="PresentTypeValuePresentLabel" xml:space="preserve">
+    <value>Є</value>
+  </data>
+  <data name="RegisterLabel" xml:space="preserve">
+    <value>Зареєструватися</value>
+  </data>
+  <data name="RegisterPageCanReceiveMails" xml:space="preserve">
+    <value>Отримувати електронні листи про нові оголошення на сайті</value>
+  </data>
+  <data name="RegisterPageComparePasswordsError" xml:space="preserve">
+    <value>Паролі не співпадають</value>
+  </data>
+  <data name="RegisterPageConfirmPassword" xml:space="preserve">
+    <value>Підтвердіти пароль</value>
+  </data>
+  <data name="RegisterPageEmailLabel" xml:space="preserve">
+    <value>Електронна пошта</value>
+  </data>
+  <data name="RegisterPageError" xml:space="preserve">
+    <value>Не правильно заповнені дані</value>
+  </data>
+  <data name="RegisterPageGoBack" xml:space="preserve">
+    <value>Повернутися</value>
+  </data>
+  <data name="RegisterPageIAgreeWithUserTerms" xml:space="preserve">
+    <value>Я погоджуюся з усіма положеннями щодо використання сайту, які описані на цій &lt;a href="{0}"&gt;сторінці&lt;/a&gt;.</value>
+  </data>
+  <data name="RegisterPagePassword" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="RegisterPagePasswordTooShortError" xml:space="preserve">
+    <value>Пароль містити мінімум {0} символів</value>
+  </data>
+  <data name="RegisterPagePhoneNumberIsUsedAlready" xml:space="preserve">
+    <value>Користувач з даним номером телефону вже зареєстрований. Вкажіть інший номер телефону.</value>
+  </data>
+  <data name="RegisterPageRegisterButton" xml:space="preserve">
+    <value>Зареєструватися</value>
+  </data>
+  <data name="RegisterPageShortPhoneNumber" xml:space="preserve">
+    <value>Невірний номер телефону.</value>
+  </data>
+  <data name="RegisterPageSuccessMessage" xml:space="preserve">
+    <value>Ви були успішно зареєстровані. На вашу електронну пошту вислано повідомлення для підтвердження правдивості користувача. Перейдіть за посилання у цьому повідомленню і тоді Ви зможете подавати оголошення.</value>
+  </data>
+  <data name="RegisterPageTelephoneNumberLabel" xml:space="preserve">
+    <value>Номер телефону</value>
+  </data>
+  <data name="RegisterPageTitle" xml:space="preserve">
+    <value>Реєстрація</value>
+  </data>
+  <data name="RegisterPageUserNameLabel" xml:space="preserve">
+    <value>Ім'я</value>
+  </data>
+  <data name="RentLabel" xml:space="preserve">
+    <value>Оренда довгострокова</value>
+  </data>
+  <data name="ShowFeedbackForAllLabel" xml:space="preserve">
+    <value>Зробити відгук видимий для всіх</value>
+  </data>
+  <data name="SquareUnitAreLabel" xml:space="preserve">
+    <value>ар</value>
+  </data>
+  <data name="SquareUnitHectareLabel" xml:space="preserve">
+    <value>га</value>
+  </data>
+  <data name="SquareUnitSquareMetersLabel" xml:space="preserve">
+    <value>м2</value>
+  </data>
+  <data name="UnknownLabel" xml:space="preserve">
+    <value>Невідомо</value>
+  </data>
+  <data name="WallMaterialCeglaLabel" xml:space="preserve">
+    <value>Цегла</value>
+  </data>
+  <data name="WallMaterialGasBetonLabel" xml:space="preserve">
+    <value>Газбетон</value>
+  </data>
+  <data name="WallMaterialPanelLabel" xml:space="preserve">
+    <value>Панель</value>
+  </data>
+  <data name="WallMaterialUnknownLabel" xml:space="preserve">
+    <value>Невідомо</value>
+  </data>
+  <data name="WebsiteTitle" xml:space="preserve">
+    <value>Оголошення з нерухомості</value>
+  </data>
+  <data name="AccountProfileEditTitle" xml:space="preserve">
+    <value>Редагування профілю</value>
+  </data>
+  <data name="MaxNumbersLimitReached" xml:space="preserve">
+    <value>Не можливо додати більше {0} додаткових номерів!</value>
+  </data>
+  <data name="GeneralProfileManagerTitle" xml:space="preserve">
+    <value>Загальне</value>
+  </data>
+  <data name="PasswordProfileManagerTitle" xml:space="preserve">
+    <value>Змінити пароль</value>
+  </data>
+  <data name="RegisterPageBadEmailError" xml:space="preserve">
+    <value>Погано введена електронна пошта</value>
+  </data>
+  <data name="UserDataSavedMessage" xml:space="preserve">
+    <value>Дані успішно збережено</value>
+  </data>
+  <data name="ProfileOldPasswordIsNotCorrectMessage" xml:space="preserve">
+    <value>Поточний пароль не вірний</value>
+  </data>
+  <data name="UserProfileConfirmNewPasswordLabel" xml:space="preserve">
+    <value>Підтвердіть новий пароль</value>
+  </data>
+  <data name="UserProfileNewPasswordLabel" xml:space="preserve">
+    <value>Новий пароль</value>
+  </data>
+  <data name="UserProfileOldPasswordLabel" xml:space="preserve">
+    <value>Поточний пароль</value>
+  </data>
+  <data name="CabinetUserInfoTitle" xml:space="preserve">
+    <value>Інформація про користувача</value>
+  </data>
+  <data name="CabinetUserProfileAnnouncementsCountLabel" xml:space="preserve">
+    <value>Кількість оголошень</value>
+  </data>
+  <data name="CabinetUserProfileEditLabel" xml:space="preserve">
+    <value>Редагувати</value>
+  </data>
+  <data name="CabinetUserProfileNumbersLabel" xml:space="preserve">
+    <value>Номери телефонів</value>
+  </data>
+  <data name="NotesIndexTitle" xml:space="preserve">
+    <value>Відзначені оголошення</value>
+  </data>
+  <data name="NoteClearActionLabel" xml:space="preserve">
+    <value>Видалити все</value>
+  </data>
+  <data name="NoteAddLabel" xml:space="preserve">
+    <value>Відзначити</value>
+  </data>
+  <data name="NoteRemoveLabel" xml:space="preserve">
+    <value>Скасувати</value>
+  </data>
+  <data name="AnnouncementOrderAddressDescendingLabel" xml:space="preserve">
+    <value>За адресою (від Я до А)</value>
+  </data>
+  <data name="AnnouncementOrderAddressLabel" xml:space="preserve">
+    <value>За адресою (від А до Я)</value>
+  </data>
+  <data name="AnnouncementOrderDateDescendingLabel" xml:space="preserve">
+    <value>За датою(спершу старші)</value>
+  </data>
+  <data name="AnnouncementOrderDateLabel" xml:space="preserve">
+    <value>За датою(спершу новіші)</value>
+  </data>
+  <data name="AnnouncementOrderLabel" xml:space="preserve">
+    <value>Сортувати</value>
+  </data>
+  <data name="ApartmentsListTitle" xml:space="preserve">
+    <value>Список квартир</value>
+  </data>
+  <data name="ApartmentsMapTitle" xml:space="preserve">
+    <value>Квартири на карті</value>
+  </data>
+  <data name="HouseDetailsPageTitle" xml:space="preserve">
+    <value>Деталі будинку</value>
+  </data>
+  <data name="HousesListTitle" xml:space="preserve">
+    <value>Список будинків</value>
+  </data>
+  <data name="HousesMapTitle" xml:space="preserve">
+    <value>Будинки на карті</value>
+  </data>
+  <data name="LandDetailsPageTitle" xml:space="preserve">
+    <value>Деталі квартири</value>
+  </data>
+  <data name="LandsListTitle" xml:space="preserve">
+    <value>Список ділянок</value>
+  </data>
+  <data name="LandsMapTitle" xml:space="preserve">
+    <value>Ділянки на карті</value>
+  </data>
+  <data name="CabinetDeleteAnnouncementLabel" xml:space="preserve">
+    <value>Стерти</value>
+  </data>
+  <data name="CabinetDetailsAnnouncementLabel" xml:space="preserve">
+    <value>Деталі</value>
+  </data>
+  <data name="CabinetEditAnnouncementLabel" xml:space="preserve">
+    <value>Редагувати</value>
+  </data>
+  <data name="FeedbacksWebsiteTitle" xml:space="preserve">
+    <value>Відгуки та зауваження до сайту</value>
+  </data>
+  <data name="LayoutNavigationApartments" xml:space="preserve">
+    <value>Квартири</value>
+  </data>
+  <data name="LayoutNavigationHouses" xml:space="preserve">
+    <value>Будинки</value>
+  </data>
+  <data name="LayoutNavigationLands" xml:space="preserve">
+    <value>Ділянки</value>
+  </data>
+  <data name="LicenseTitle" xml:space="preserve">
+    <value>Користувацька угода</value>
+  </data>
+  <data name="AnnouncementEditHintSetAddressLabel" xml:space="preserve">
+    <value>Клацніть мишкою по карті, щоб вибрати адресу автоматично(рекомендовано). Або виберіть "Ввести адресу самому" і введіть адресу самому. Правильність введеної адреси ви можете перевірити клацнувши по кнопці "Показати на карті".</value>
+  </data>
+  <data name="HintLabel" xml:space="preserve">
+    <value>Підказка!</value>
+  </data>
+  <data name="CabinetAnnouncementLeft" xml:space="preserve">
+    <value>Ви можете додати ще &lt;strong&gt;{0}&lt;/strong&gt; оголошень.</value>
+  </data>
+  <data name="ProfileAnnouncementsLimitMessage" xml:space="preserve">
+    <value>Ви досягли максимально можливу кількість оголошень. </value>
+  </data>
+  <data name="WelcomeMassage" xml:space="preserve">
+    <value>&lt;h4&gt;Вас вітає новий сайт для розміщення оголошень про оренду і продаж нерухомості. &lt;/h4&gt;</value>
+  </data>
+  <data name="FilterInputIncorrectLabel" xml:space="preserve">
+    <value>Невірний формат введених даних</value>
+  </data>
+  <data name="AddressTypeUnknownLabel" xml:space="preserve">
+    <value>Невідомо</value>
+  </data>
+  <data name="LimitForPhotosIsReachedLabel" xml:space="preserve">
+    <value>Ви завантажили максимальну кількість фотографій для оголошення. Якщо вам потрібно додати ще фотграфій &lt;a href="{0}"&gt;оновіть ваш профайл&lt;/a&gt;</value>
+  </data>
+  <data name="PhotosLeft" xml:space="preserve">
+    <value>Ви можете завантажити {0} фотографій</value>
+  </data>
+  <data name="AccountUpdateLimitTitle" xml:space="preserve">
+    <value>Тарифний план</value>
+  </data>
+  <data name="ProfileApplyButtonLabel" xml:space="preserve">
+    <value>Купити</value>
+  </data>
+  <data name="ProfileMaxAnnouncementsLabel" xml:space="preserve">
+    <value>Максимальна к-сть оголошень</value>
+  </data>
+  <data name="ProfileMaxPhotosPerAnnouncementsLabel" xml:space="preserve">
+    <value>Максимальна к-сть фотографій для оголошення</value>
+  </data>
+  <data name="ProfilePriceLabel" xml:space="preserve">
+    <value>Ціна за місяць</value>
+  </data>
+  <data name="UpdateProfileToLable" xml:space="preserve">
+    <value>Оновлення тарифного плану до </value>
+  </data>
+  <data name="UpdateLimitWaitingLabel" xml:space="preserve">
+    <value>Ваша заявка на збільшення ліміту оголошень прийнята. Після отримання відповіді від банку на Вашу електронну пошту буде вислано лист з підвердженням. </value>
+  </data>
+  <data name="UpdateFail" xml:space="preserve">
+    <value>Гроші не надіслано. Сталася помилка під час оновлення тарифного плану. Якщо у вас виникли запитання звертайтесь за номером телефону {0}.</value>
+  </data>
+  <data name="UpdateSuccess" xml:space="preserve">
+    <value>Ваш тарифний план оновлено. Ви можете додавати нові оголошення. Дякуємо.</value>
+  </data>
+  <data name="WebsiteEmailAddress" xml:space="preserve">
+    <value>Електронна пошта</value>
+  </data>
+  <data name="WebsiteMobileNumber" xml:space="preserve">
+    <value>Контактний телефон</value>
+  </data>
+  <data name="EmailProfileWillBeExpiredBody" xml:space="preserve">
+    <value>Ваш тарифний план закінчується на сайті aparts.in.ua закінчується через {0} днів. Будь ласка, &lt;a href="{1}"&gt;продовжіть ваш тарифний план&lt;/a&gt;. Якщо Ви не продовжите його то ви буете переведені на базовий тарифний план і тільки останні 5 оголошень будуть видимі для користувачів. Якщо Ви продовжите свій тарифний план після того як вийде термін його термін дії, тоді ваші старі оголошення знову стануть видимі.</value>
+  </data>
+  <data name="EmailProfileWillBeExpiredTitle" xml:space="preserve">
+    <value>Ваш тарифний план закінчується через {0} днів.</value>
+  </data>
+  <data name="ProfileContinueButtonLabel" xml:space="preserve">
+    <value>Продовжити</value>
+  </data>
+  <data name="ProfilesExpireLabel" xml:space="preserve">
+    <value>Ваш тарифний план занчується</value>
+  </data>
+  <data name="ProfilesExpireNeverLabel" xml:space="preserve">
+    <value>Ніколи</value>
+  </data>
+  <data name="ProfilesListLabel" xml:space="preserve">
+    <value>Список тарифних планів</value>
+  </data>
+  <data name="YourProfileLabel" xml:space="preserve">
+    <value>Назва вашого тарифного плану</value>
+  </data>
+  <data name="AnnouncementTypeLabel" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="RentShortLabel" xml:space="preserve">
+    <value> Оренда короткострокова</value>
+  </data>
+  <data name="AnnouncementEditLandApplyTypeLabel" xml:space="preserve">
+    <value>Призначення</value>
+  </data>
+  <data name="LandApplyTypeForBuildingLabel" xml:space="preserve">
+    <value>Під забудову</value>
+  </data>
+  <data name="LandApplyTypeSummerHouseLabel" xml:space="preserve">
+    <value>Дача</value>
+  </data>
+  <data name="LandApplyTypeUnknownLabel" xml:space="preserve">
+    <value>Невідомо</value>
+  </data>
+  <data name="LandsDetailsPageApplyTypeLabel" xml:space="preserve">
+    <value>Призначення</value>
+  </data>
+  <data name="UnimportantLabel" xml:space="preserve">
+    <value>Не важливо</value>
+  </data>
+  <data name="RegisterShareMessage" xml:space="preserve">
+    <value>&lt;h4&gt;Увага акція!&lt;/h4&gt;Подайте оголошення до {0} і ви отримаєте можливість подати до {1} оголошень до {2}.</value>
+  </data>
+  <data name="ConfirmationMailBody" xml:space="preserve">
+    <value>Ви зареєструвалися на сайті {0}. Для підтвердження правдивості користувача перейдіть, будь ласка за цим посиланням:&lt;p&gt;&lt;a href="{1}"&gt;{1}&lt;/a&gt;&lt;/p&gt;. &lt;p&gt;Якщо Ви не реєструвалися на {0}, то проігноруйте цей лист.&lt;/p&gt;</value>
+  </data>
+  <data name="ConfirmationMailTitle" xml:space="preserve">
+    <value>Підтвердження користувача - сайт нерухомості</value>
+  </data>
+  <data name="LoginPageUserIsntConfirmedError" xml:space="preserve">
+    <value>Правдивість даного користувача не підтверджена. Перейдіть за послинням, яке відправлене на електронну пошту даного користувача. </value>
+  </data>
+  <data name="RegisterPageEmailHintMessage" xml:space="preserve">
+    <value>Введіть адресу електронної пошти, до якої Ви маєте доступ. Після реєстрації, на введену Вами адресу, буде вислано електроне повідомлення. Вам потрібно буде перейти за посилання, яке буде у цьому листі, для подальшого подання оголошень.</value>
+  </data>
+  <data name="ForgetPasswordLabel" xml:space="preserve">
+    <value>Забули пароль?</value>
+  </data>
+  <data name="ResendEmailAgainLabel" xml:space="preserve">
+    <value>Відправити ще раз повідомлення з кодом підтвердження</value>
+  </data>
+  <data name="ForgetPasswordSendButton" xml:space="preserve">
+    <value>Відправити пароль на електронну пошту</value>
+  </data>
+  <data name="ForgetPasswordSuccess" xml:space="preserve">
+    <value>Повідомлення з паролем успішно відправленне</value>
+  </data>
+  <data name="ForgetPasswordTitle" xml:space="preserve">
+    <value>Відновлення паролю</value>
+  </data>
+  <data name="SendConfirmEmailSendButton" xml:space="preserve">
+    <value>Відіслати повідомлення</value>
+  </data>
+  <data name="SendConfirmEmailSuccess" xml:space="preserve">
+    <value>Повідомлення з підтвердженням успішно відправленне</value>
+  </data>
+  <data name="SendConfirmEmailTitle" xml:space="preserve">
+    <value>Відсилання листа з підтвердженням</value>
+  </data>
+  <data name="SendPasswordMailBody" xml:space="preserve">
+    <value>Ви зареєструвані на сайті {0}. &lt;p&gt;Ваш новий пароль:{1}&lt;/p&gt;&lt;p&gt;Новий пароль дійсний до {2}. Якщо Ви не авторизуєтесь до {2} з новим паролем на сайті {0}, тоді він буде замінений на старий пароль.&lt;/p&gt; &lt;p&gt;Якщо Ви не реєструвалися на {0}, то проігноруйте цей лист.&lt;/p&gt;</value>
+  </data>
+  <data name="SendPasswordMailTitle" xml:space="preserve">
+    <value>Відновлення паролю - сайт нерухомості</value>
+  </data>
+  <data name="UserIsNotFoundMessage" xml:space="preserve">
+    <value>Такого користувача не існує</value>
+  </data>
+  <data name="RequiredMessage" xml:space="preserve">
+    <value>Поле {0} є обов'язковим для введення</value>
+  </data>
+  <data name="ErrorExceptionMessage" xml:space="preserve">
+    <value>Щось пішло не так!</value>
+  </data>
+  <data name="ErrorNotFoundMessage" xml:space="preserve">
+    <value>Даний ресурс не знайдено!</value>
+  </data>
+  <data name="AnnouncementViewLabel" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="LayoutNavigationMain" xml:space="preserve">
+    <value>Статистика</value>
+  </data>
+  <data name="MainIndexTitleDistrictHistoryChart" xml:space="preserve">
+    <value>Зміна ціни за м. кв. в {0} р-н</value>
+  </data>
+  <data name="MainIndexTitleDistrictsChart" xml:space="preserve">
+    <value>Середня ціна за м. кв. в різних районах Львова</value>
+  </data>
+  <data name="a" xml:space="preserve">
+    <value>Якщо Вам набридло платити за розміщення оголошень з нерухомості, слідкувати чи ваше оголошення є на сайті, подавати кожен раз оголошення після того як воно зникло, тоді Вам потрібно зареєструватися на цьому сайті і керувати своїми оголошеннями самостійно. Цей сайт надає можливість &lt;strong&gt;безкоштовного пошуку оголошень&lt;/strong&gt; про продаж і оренду нерухомості, а також &lt;strong&gt;подачі до {0} безкоштовних оголошень з фотографіями&lt;/strong&gt;. Для подачі оголошень Вам потрібно &lt;a href="{1}"&gt;зареєструватися&lt;/a&gt;. Для отримання {0} безкоштовних оголошень Вам потрібно &lt;strong&gt;подати хоча б 1 оголошення до {2}&lt;/strong&gt;.</value>
+  </data>
+  <data name="StatisticPageTitle" xml:space="preserve">
+    <value>Статистика</value>
+  </data>
+</root>

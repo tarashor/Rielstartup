@@ -1,0 +1,53 @@
+﻿@model RielAp.Web.Models.HousesListViewModel
+@using RielAp.Web.Utils
+@{
+    ViewBag.Title = RielAp.Translation.Translation.HousesListTitle;
+    ViewBag.CurrentPage = NavigationPage.Houses;
+    Layout = "~/Views/Shared/_HousesLayout.cshtml";
+}
+
+
+@Html.Partial("_AnnouncementsTable", Model)
+@Html.PageLinks(Model.Page, x => Url.Action("Houses", new {page = x}))
+
+@section scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.actionNoteBtn').each(function (index, item) {
+                var apartmentId = $(item).attr('data-apartmentId');
+                $(item).attr('data-isAdded', Note.isAnnouncementIdAddedAlready(apartmentId));
+                applyState(item);
+            });
+
+            $('.actionNoteBtn').click(function () {
+                var btn = this;
+                var state = $(btn).attr('data-isAdded');
+                var apartmentId = $(btn).attr('data-apartmentId');
+                if (state.toLowerCase() == "false") {
+                    Note.addAnnouncementId(apartmentId);
+                    $(btn).attr('data-isAdded', true);
+                    applyState(btn);
+                }
+                else {
+                    Note.removeAnnouncementId(apartmentId);
+                    $(btn).attr('data-isAdded', false);
+                    applyState(btn);
+                }
+            });
+        });
+
+        function applyState(btn) {
+            var state = $(btn).attr('data-isAdded');
+            if (state.toLowerCase() == "true") {
+                $(btn).removeClass("btn-success");
+                $(btn).addClass("btn-danger");
+                $(btn).text("@RielAp.Translation.Translation.NoteRemoveLabel");
+            }
+            else {
+                $(btn).removeClass("btn-danger");
+                $(btn).addClass("btn-success");
+                $(btn).text("@RielAp.Translation.Translation.NoteAddLabel");
+            }
+        };
+    </script>
+}

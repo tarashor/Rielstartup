@@ -1,0 +1,13 @@
+﻿@model RielAp.Domain.Models.Feedback
+
+<tr>
+        <td>
+            <div style="border-bottom: 1px solid #c3c1c1;">
+                <strong>@Model.Author</strong>
+                <span class="pull-right">@Model.Created.ToString()</span>
+            </div>
+            <div style="padding:5px; background-color:#ddd">
+                @Model.Text
+            </div>
+        </td>
+    </tr>

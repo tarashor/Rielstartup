@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row-fluid">
+    @if (TempData["message"] != null)
+    {
+        <div class="alert alert-error">@TempData["message"]</div>
+    }
+</div>
+
+<div class="row-fluid">
+    <div class="span3">
+        <ul class="nav nav-tabs nav-stacked" id="navTabs">
+            <li class="@(ViewBag.AdminCurrentPage == RielAp.Web.Areas.Admin.Models.AdminViewType.Users ? "active" : "")"><a href="@Url.Action("Users", "Default", new { phone=ViewBag.UserPhone})" >Users</a></li>
+            <li class="@(ViewBag.AdminCurrentPage == RielAp.Web.Areas.Admin.Models.AdminViewType.Additional ? "active" : "")"><a href="@Url.Action("Operations", "Default", new { phone=ViewBag.UserPhone})">Operations</a></li>
+        </ul>
+    </div>
+    <div class="span9">
+        <div class="tab-content" style="overflow: visible;">
+            <div class="tab-pane active">
+                @RenderBody()
+
+            </div>
+            
+        </div>
+    </div>
+</div>

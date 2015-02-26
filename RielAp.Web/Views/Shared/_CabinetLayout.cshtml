@@ -1,0 +1,43 @@
+﻿@using RielAp.Translation;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = Translation.CabinetTitlePage;
+    ViewBag.CurrentPage = ViewBag.IsMyCabinet ? NavigationPage.Cabinet : NavigationPage.None;
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row-fluid">
+    @if (TempData["message"] != null)
+    {
+        <div class="alert alert-error">@TempData["message"]</div>
+    }
+</div>
+
+
+<div class="row-fluid">
+    <div class="span3">
+        <ul class="nav nav-tabs nav-stacked" id="navTabs">
+            <li class="@(ViewBag.CabinetCurrentTab == CabinetViewType.Announcements ? "active" : "")"><a href="@Url.Action("Announcements", "Cabinet", new { phone=ViewBag.UserPhone})" >@Translation.CabinetAnnouncementsListTitle</a></li>
+            <li class="@(ViewBag.CabinetCurrentTab == CabinetViewType.UserProfile ? "active" : "")"><a href="@Url.Action("UserProfile", "Cabinet", new { phone=ViewBag.UserPhone})">@Translation.CabinetUserInfoTitle</a></li>
+            <li class="@(ViewBag.CabinetCurrentTab == CabinetViewType.Feedbacks ? "active" : "")"><a href="@Url.Action("Feedbacks", "Cabinet", new { phone=ViewBag.UserPhone})">@Translation.CabinetFeedbacksListTitle</a></li>
+            @if (ViewBag.IsMyCabinet){
+                <li class="@(ViewBag.CabinetCurrentTab == CabinetViewType.AccountUpdate ? "active" : "")"><a href="@Url.Action("UpdateLimit", "Account")">@Translation.AccountUpdateLimitTitle</a></li>
+            }
+        </ul>
+    </div>
+    <div class="span9">
+        <div class="tab-content" style="overflow: visible;">
+            <div class="tab-pane active">
+                @RenderBody()
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+@section scripts{
+     @Scripts.Render("~/bundles/js");
+}

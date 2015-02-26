@@ -1,0 +1,60 @@
+﻿@model RielAp.Domain.Models.ApartmentAnnouncement
+@{
+    string mainPhotoUrl = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAErUlEQVR4Xu3YwStscRjG8d8QQnZEFkqyY6NE/n0rlOxkS1ZqrCiFe/udOtPcue6YJ889Gc93Vtz7eo/3eT/9zjl6/X7/V+FDAhMm0APMhElR1iQAGCBICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpAcBIcVEMGAxICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpAcBIcVEMGAxICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpAcBIcVEMGAxICQBGiotiwGBASgAwUlwUAwYDUgKAkeKiGDAYkBIAjBQXxYDBgJQAYKS4KAYMBqQEACPFRTFgMCAlABgpLooBgwEpgakH8/7+Xs7Ozsrz83M5OTkpi4uLfwRwd3dXbm5uyvr6etnf32/+r9/vl6urq1J/tn729vbKxsbGRMF1fb2JfqkOi6YazOvrazk9PS1vb2+l1+v9BaZd7tPT0wBM+zNLS0vl6OioXF5eNtjq13Nzc2Oj7/p6HTqY+FJTC2Z4eXXaj8BcX1+Xh4eHUmvX1taaE6Y9cba3t8vOzs7g+3rKzM/PNyfP8vJyA6j+/P39fXMCra6uDnC6rjfpqTbxNjsonGowFxcX5eDgYHBKDN+S2tvO1tZWub29/RRMC6ieOI+Pj+X4+Licn5+X9iSq6P7H9TrYsfUSUwumTeGjZ4r232ZmZsru7m5zarQnTHtqjJ4w7feT3naGn5m+cj3rNjto9iPBDN9K2tvMZ7ekFkzNvJ4y9YQaflAeB/Sr1+tgz7ZL/DgwCwsLzVtTfdAd/aysrJTNzc3mremjZ5j6TNHeyuoD8MvLy19vUKMn2levZ9tkR41+HJjR1+oWQHvCjHtLmp2dbbDVt67Dw8PmpKlfD79BffZarVzvs7eyjgxIl4kDM+7vMP96vhm+Nalgxl1P2tQ3KZ56MN8kx5hfAzAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gwKGE+OMV0AE7Nqz6CA8eQY0wUwMav2DAoYT44xXQATs2rPoIDx5BjTBTAxq/YMChhPjjFdABOzas+ggPHkGNMFMDGr9gz6G1HzSbXtC7t7AAAAAElFTkSuQmCC";
+    if (Model.Photos.Count > 0)
+    {
+        RielAp.Domain.Models.Photo mainPhoto = Model.Photos.Where(p => p.IsMain).FirstOrDefault();
+        if (mainPhoto != null)
+        {
+            mainPhotoUrl = mainPhoto.Url;
+        }
+    }
+
+    int daysOnSite = (DateTime.Now - Model.Created).Days;
+    
+}
+<td style="width: 130px">
+    <img data-src="holder.js/120x120" class="img-polaroid" alt="120x120" style="width: 120px; height: 120px;" src="@mainPhotoUrl"/>
+</td>
+<td>
+    <div class="row-fluid">
+        <div class="span5"><strong>@Model.Address.ToString()</strong></div>
+        <div class="span4"><strong>@RielAp.Translation.Translation.ApartmentAnnouncementLabel - </strong>@EnumsToSelectedListItems.GetTextFromEnumValue(Model.Type)</div>
+        <div class="span3 text-right"><strong>@Model.ConvertToCurrency(RielAp.Domain.Models.Currency.Dollar).ToString("0.##") @EnumsToSelectedListItems.GetTextFromEnumValue(Model.Currency)</strong></div>
+    </div>
+    <div class="row-fluid">
+        <div class="span5"><span>@RielAp.Translation.Translation.ApartmentDetailsPageRoomsCountLabel:</span> @Html.DisplayFor(modelItem => modelItem.RoomsNumber)</div>
+        <div class="span4"><span>@RielAp.Translation.Translation.ApartmentDetailsPageFloorLabel:</span>@Html.DisplayFor(modelItem => modelItem.Floor)/@Html.DisplayFor(modelItem => modelItem.MaxFloor)</div>
+        <div class="span3 text-right"><span>@RielAp.Translation.Translation.ApartmentDetailsPageSquareLabel:</span>@Html.DisplayFor(modelItem => modelItem.TotalSquare.Value) @EnumsToSelectedListItems.GetTextFromEnumValue(Model.TotalSquare.Unit)</div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span5"><span>@RielAp.Translation.Translation.ApartmentDetailsPageFloorMaterialsLabel:</span> @EnumsToSelectedListItems.GetTextFromEnumValue(Model.FloorMaterial)</div>
+        <div class="span4"><span>@RielAp.Translation.Translation.ApartmentDetailsPageWallMaterialsLabel:</span>@EnumsToSelectedListItems.GetTextFromEnumValue(Model.WallMaterial)</div>
+        
+    </div>
+
+    <div class="row-fluid">
+        <div class="span12">
+            <a href="@Url.Action("Announcements", "Cabinet", new { phone = Model.User.Phone })">
+                <span>@Model.User.Username</span>    
+            </a>
+            <strong>
+                :
+            <span class="bfh-phone" data-format="+dd (ddd) ddd-dddd" data-number="@Model.User.Phone"></span>
+            @foreach (RielAp.Domain.Models.MobileNumber mn in Model.User.AdditionalNumbers) { 
+                <span>, </span>
+                <span class="bfh-phone" data-format="+dd (ddd) ddd-dddd" data-number="@mn.Number"></span>
+            }
+            </strong>
+        </div>
+    </div>
+    <div class="row-fluid ">
+        <div class="well well-small" style="max-height: 150px; overflow-y: auto;">
+            <small>
+                @Html.DisplayFor(modelItem => Model.Notice)
+            </small>
+        </div>
+    </div>
+
+</td>
