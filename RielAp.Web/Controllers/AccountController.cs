@@ -15,11 +15,13 @@ using System.Configuration;
 using RielAp.Web.Utils;
 using System.Xml;
 using System.Security.Cryptography;
+using RielAp.Web.Services.Account;
 
 namespace RielAp.Web.Controllers
 {
     public class AccountController : Controller
     {
+        private readonly ILoginService loginService;
         private readonly IAuthProvider _authProvider;
         private readonly IPasswordValidator _passwordValidator;
         private readonly IPasswordEncrypter _passwordEncryptor;
@@ -36,7 +38,8 @@ namespace RielAp.Web.Controllers
             IMobileNumbersRepository mobileNumberRepository, 
             IProfilesRepository profilesRepository, 
             IOrdersRepository ordersRepository,
-            IRolesRepository rolesRepository
+            IRolesRepository rolesRepository,
+            ILoginService loginService
         )
         {
             _authProvider = authProvider;
@@ -47,6 +50,7 @@ namespace RielAp.Web.Controllers
             _profilesRepository = profilesRepository;
             _ordersRepository = ordersRepository;
             _rolesRepository = rolesRepository;
+            this.loginService = loginService;
         }
 
         #region Register
@@ -223,51 +227,7 @@ namespace RielAp.Web.Controllers
             string message = Translation.Translation.LoginPageLoginError;
             if (ModelState.IsValid)
             {
-                string phone = StringHelper.GetOnlyNumbers(model.Phone);
-                model.Phone = phone;
-                if (phone.Length == 12)
-                {
-                    AuthResult authResult = _authProvider.Authenticate(phone, model.Password);
-                    if (authResult == AuthResult.Success)
-                    {
-                        User user = _userRepository.GetUserByPhone(phone);
-                        if (user != null)
-                        {
-                            if (user.ProfileExpires.HasValue)
-                            {
-                                if (user.ProfileExpires.Value.CompareTo(DateTime.Now) < 0)
-                                {
-                                    user.Profile = _profilesRepository.GetBasicProfile();
-                                    user.ProfileExpires = null;
-                                }
-                            }
-
-                            if (!string.IsNullOrEmpty(user.TemporaryPassword))
-                            {
-                                user.Password = user.TemporaryPassword;
-                                user.TemporaryPasswordExpires = null;
-                                user.TemporaryPassword = null;
-                            }
-
-                            _userRepository.SaveChanges();
-                            return RedirectToLocal(returnUrl);
-                        }
-                    }
-                    else if (authResult == AuthResult.NoRights)
-                    {
-
-                        message = Translation.Translation.AccessIsDeniedMessage;
-                    }
-
-                    /*if (user.IsConfirmed)
-                    {
-            
-                    }
-                    else {
-                        message = Translation.Translation.LoginPageUserIsntConfirmedError;
-                    }*/
-
-                }
+                message = this.loginService.Login(model);
             }
 
             ModelState.AddModelError("", message);

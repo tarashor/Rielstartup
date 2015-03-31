@@ -231,6 +231,8 @@
     <Compile Include="Models\ProfileViewType.cs" />
     <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Account\ILoginService.cs" />
+    <Compile Include="Services\Account\Implementation\FormLoginUserService.cs" />
     <Compile Include="Utils\AnnouncementOrder.cs" />
     <Compile Include="Utils\AppartmentHelper.cs" />
     <Compile Include="Utils\CurrencyConverter.cs" />

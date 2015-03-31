@@ -7,21 +7,21 @@
 
 <fieldset>
         <legend>@Translation.LoginPageTitle</legend>
-    @if (!Html.ViewData.ModelState.IsValid)
-    {
-    <div class="alert alert-error">
-        @foreach (var modelError in Html.ViewData.ModelState.SelectMany(keyValuePair => keyValuePair.Value.Errors))
+        @if (!Html.ViewData.ModelState.IsValid)
         {
-            <div>@modelError.ErrorMessage</div>
-        }
-    </div>
-    }
-
-    @if (TempData["LoginMessage"] != null) { 
-        <div class="alert alert-success">
-            @TempData["LoginMessage"]
+        <div class="alert alert-error">
+            @foreach (var modelError in Html.ViewData.ModelState.SelectMany(keyValuePair => keyValuePair.Value.Errors))
+            {
+                <div>@modelError.ErrorMessage</div>
+            }
         </div>
-    }
+        }
+
+        @if (TempData["LoginMessage"] != null) { 
+            <div class="alert alert-success">
+                @TempData["LoginMessage"]
+            </div>
+        }
     
 @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", style = "width: 500px;  margin: auto;" }))
 {
@@ -41,7 +41,6 @@
         <div class="control-group">
             <div class="controls">
                 <p>@Html.ActionLink(Translation.ForgetPasswordLabel, "ForgetPassword", "Account")</p>
-                @*<p>@Html.ActionLink(Translation.ResendEmailAgainLabel, "SendConfirmEmail", "Account")</p>*@
             </div>
         </div>
         <div class="control-group">
