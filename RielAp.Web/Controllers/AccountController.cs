@@ -227,7 +227,10 @@ namespace RielAp.Web.Controllers
             string message = Translation.Translation.LoginPageLoginError;
             if (ModelState.IsValid)
             {
-                message = this.loginService.Login(model);
+                if (loginService.Login(model.Phone, model.Password))
+                {
+                    return RedirectToLocal(returnUrl);
+                }
             }
 
             ModelState.AddModelError("", message);

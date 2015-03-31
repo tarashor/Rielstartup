@@ -233,6 +233,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Account\ILoginService.cs" />
     <Compile Include="Services\Account\Implementation\FormLoginUserService.cs" />
+    <Compile Include="Services\Account\IUserValidator.cs" />
+    <Compile Include="Services\Account\IProfileValidator.cs" />
     <Compile Include="Utils\AnnouncementOrder.cs" />
     <Compile Include="Utils\AppartmentHelper.cs" />
     <Compile Include="Utils\CurrencyConverter.cs" />

@@ -10,48 +10,33 @@ using System.Web;
 
 namespace RielAp.Web.Services.Account.Implementation
 {
-    public class FormLoginUserService: ILoginService
+    public class FormLoginUserService : ILoginService
     {
         private IAuthProvider authProvider;
+        private IUserValidator userValidator;
 
-        public string Login(LoginViewModel model)
+        public bool Login(string userPhone, string password)
         {
-            /*string phone = StringHelper.GetOnlyNumbers(model.Phone);
+            string phone = StringHelper.GetOnlyNumbers(userPhone);
             if (phone.Length == 12)
             {
-                AuthResult authResult = _authProvider.Authenticate(phone, model.Password);
+                AuthResult authResult = authProvider.Authenticate(phone, password);
                 if (authResult == AuthResult.Success)
                 {
-                    User user = _userRepository.GetUserByPhone(phone);
-                    if (user != null)
+                    return userValidator.Validate(phone);
+                }
+                /*
+                    if (!string.IsNullOrEmpty(user.TemporaryPassword))
                     {
-                        if (user.ProfileExpires.HasValue)
-                        {
-                            if (user.ProfileExpires.Value.CompareTo(DateTime.Now) < 0)
-                            {
-                                user.Profile = _profilesRepository.GetBasicProfile();
-                                user.ProfileExpires = null;
-                            }
-                        }
-
-                        if (!string.IsNullOrEmpty(user.TemporaryPassword))
-                        {
-                            user.Password = user.TemporaryPassword;
-                            user.TemporaryPasswordExpires = null;
-                            user.TemporaryPassword = null;
-                        }
-
-                        _userRepository.SaveChanges();
-                        return RedirectToLocal(returnUrl);
+                        user.Password = user.TemporaryPassword;
+                        user.TemporaryPasswordExpires = null;
+                        user.TemporaryPassword = null;
                     }
-                }
-                else if (authResult == AuthResult.NoRights)
-                {
-
-                    message = Translation.Translation.AccessIsDeniedMessage;
-                }
-            }*/
-            return Translation.Translation.AccessIsDeniedMessage;
+                    _userRepository.SaveChanges();
+                */
+            }
+            return false;
         }
     }
+
 }
