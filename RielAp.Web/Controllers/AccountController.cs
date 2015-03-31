@@ -240,7 +240,8 @@ namespace RielAp.Web.Controllers
         [HttpPost]
         public ActionResult Logoff() {
             if (Request.IsAuthenticated) {
-                FormsAuthentication.SignOut();
+                loginService.Logout();
+                
             }
             return Redirect("/");
         }

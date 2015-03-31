@@ -10,5 +10,7 @@ namespace RielAp.Web.Services.Account
     interface ILoginService
     {
         bool Login(string userPhone, string password);
+
+        void Logout();
     }
 }

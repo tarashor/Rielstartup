@@ -37,6 +37,12 @@ namespace RielAp.Web.Services.Account.Implementation
             }
             return false;
         }
+
+
+        public void Logout()
+        {
+            FormsAuthentication.SignOut();
+        }
     }
 
 }

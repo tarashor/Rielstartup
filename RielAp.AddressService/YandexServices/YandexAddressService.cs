@@ -73,6 +73,7 @@ namespace RielAp.AddressService.YandexServices
 
         public Coordinates GetCoordinates(int? buildingNumber, string street, string city)
         {
+//aaaa
             throw new NotImplementedException();
         }
     }
