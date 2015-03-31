@@ -435,7 +435,9 @@
     <Folder Include="Resources\Photos\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RielAp.Core\RielAp.Core.csproj">

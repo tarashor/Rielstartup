@@ -32,8 +32,6 @@ namespace RielAp.Web
             DefaultModelBinder.ResourceClassKey = "TranslatedDefaultErrors";
         }
 
-        /*
-
         protected void Application_Error(object sender, EventArgs e)
         {
             var httpContext = ((MvcApplication)sender).Context;
@@ -83,6 +81,6 @@ namespace RielAp.Web
 
             controller.ViewData.Model = new HandleErrorInfo(ex, currentController, currentAction);
             ((IController)controller).Execute(new RequestContext(new HttpContextWrapper(httpContext), routeData));
-        }*/
+        }
     }
 }
