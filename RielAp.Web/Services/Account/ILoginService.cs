@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RielAp.Web.Services.Account
 {
-    interface ILoginService
+    public interface ILoginService
     {
         bool Login(string userPhone, string password);
 

@@ -11,7 +11,7 @@ namespace RielAp.Domain.Repositories
         IEnumerable<Statistic> GetAllStatistics();
 
         decimal GetPricePerMeterForDistrict(string district);
-        IEnumerable<Statistic> GetStatisticForDistrict(string district);
+        IEnumerable<Statistic> GetStatisticForDistrict(string district, DateTime start, DateTime end);
         IEnumerable<Statistic> GetLastStatisticData();
     }
 }

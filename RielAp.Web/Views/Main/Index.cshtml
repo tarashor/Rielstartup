@@ -11,7 +11,12 @@
 
 <div style="width:800px; margin: auto;">
     <h3 id="historyChartTitle"></h3>
-    <label for="">Виберіть район</label><select id="districts"></select>
+    <div style="float:left; margin-right:10px;">
+        <label for="districts">Виберіть район</label><select id="districts"></select>
+    </div>
+    <div>
+        <label for="times">Виберіть часовий період</label><select id="times"><option>Попередній тиждень</option><option>Попередній місяць</option><option>Весь період</option></select>
+    </div>
     <canvas id="districtHistoryChart" width="800" height="500"></canvas>
 </div>
 
@@ -43,8 +48,8 @@
             
         }
 
-        function showDistrictHistory(district) {
-            $.post("@Url.Action("GetStatisticForDistrict","Main")", { district: district }, function (res) {
+        function showDistrictHistory(district, time) {
+            $.post("@Url.Action("GetStatisticForDistrict","Main")", { district: district, timeperiod: time }, function (res) {
                 $("#historyChartTitle").html(res.Title);
                 var l = [];
                 var v = [];

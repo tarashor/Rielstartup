@@ -38,5 +38,11 @@ namespace RielAp.Domain.Repositories.Implementations
         {
             return Context.Statistics.Where(a => !a.IsOld);
         }
+
+
+        public IEnumerable<Statistic> GetStatisticForDistrict(string district, DateTime start, DateTime end)
+        {
+            return Context.Statistics.Where(a => (a.District == district) && (a.Date>=start) && (a.Date<=end)).OrderBy(a => a.Date);
+        }
     }
 }

@@ -91,9 +91,10 @@ namespace RielAp.Web.Controllers
 
 
         [HttpPost]
-        public JsonResult GetStatisticForDistrict(string district)
+        public JsonResult GetStatisticForDistrict(string district, int timeperiod)
         {
             IEnumerable<Statistic> statisticForDistrict = _statisticRepository.GetStatisticForDistrict(district);
+            
             Dictionary<string, decimal> stat = new Dictionary<string, decimal>();
             foreach (Statistic statistic in statisticForDistrict)
             {
@@ -103,6 +104,7 @@ namespace RielAp.Web.Controllers
                     stat.Add(date, statistic.PricePerMeter);
                 }
             }
+            
             return Json(new { Statistic = stat, Title = string.Format(RielAp.Translation.Translation.MainIndexTitleDistrictHistoryChart, district)});
         }
 
