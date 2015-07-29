@@ -143,8 +143,12 @@ namespace RielAp.Web.Models
             return GetItemsForDropDown(values, getAdditional);
         }
 
-       
 
+        public static IEnumerable<SelectListItem> GetTimePeriodsList(bool getAdditional = false)
+        {
+            IEnumerable<TimePeriods> units = Enum.GetValues(typeof(TimePeriods)).Cast<TimePeriods>();
+            return GetItemsForDropDown(units, getAdditional);
+        }
         
     }
 }

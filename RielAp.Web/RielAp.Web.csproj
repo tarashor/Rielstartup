@@ -196,6 +196,7 @@
     <Compile Include="Models\ChangePasswordModel.cs" />
     <Compile Include="Models\FilterCriteriaViewModel.cs" />
     <Compile Include="Models\LocalizedRequiredAttribute.cs" />
+    <Compile Include="Models\TimePeriods.cs" />
     <Compile Include="Models\UpdateLimitModel.cs" />
     <Compile Include="Models\UserProfileModel.cs" />
     <Compile Include="Global.asax.cs">

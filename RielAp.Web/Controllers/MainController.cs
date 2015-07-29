@@ -1,6 +1,7 @@
 ﻿using RielAp.Domain.Models;
 using RielAp.Domain.Repositories;
 using RielAp.Parser.Parsers;
+using RielAp.Web.Models;
 using RielAp.Web.Utils;
 using System;
 using System.Collections.Generic;
@@ -91,9 +92,9 @@ namespace RielAp.Web.Controllers
 
 
         [HttpPost]
-        public JsonResult GetStatisticForDistrict(string district, int timeperiod)
+        public JsonResult GetStatisticForDistrict(string district, TimePeriods timeperiod)
         {
-            IEnumerable<Statistic> statisticForDistrict = _statisticRepository.GetStatisticForDistrict(district);
+            IEnumerable<Statistic> statisticForDistrict = _statisticRepository.GetStatisticForDistrict(district, TimePeriodsUtil.GetStartDate(timeperiod), TimePeriodsUtil.GetEndDate(timeperiod));
             
             Dictionary<string, decimal> stat = new Dictionary<string, decimal>();
             foreach (Statistic statistic in statisticForDistrict)

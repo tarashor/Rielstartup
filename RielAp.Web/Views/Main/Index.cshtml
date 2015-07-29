@@ -15,7 +15,7 @@
         <label for="districts">Виберіть район</label><select id="districts"></select>
     </div>
     <div>
-        <label for="times">Виберіть часовий період</label><select id="times"><option>Попередній тиждень</option><option>Попередній місяць</option><option>Весь період</option></select>
+        <label for="times">Виберіть часовий період</label>@Html.DropDownList("times" , EnumsToSelectedListItems.GetTimePeriodsList(), new { id = "times" })
     </div>
     <canvas id="districtHistoryChart" width="800" height="500"></canvas>
 </div>
@@ -65,7 +65,11 @@
 
         $(document).ready(function () {
             $("#districts").change(function () {
-                showDistrictHistory($(this).val())
+                showDistrictHistory($(this).val(), $('#times').val());
+            });
+
+            $("#times").change(function () {
+                showDistrictHistory($('#districts').val(), $('#times').val());
             });
 
             var ctx1 = $("#districtCompareChart").get(0).getContext("2d");
@@ -85,7 +89,7 @@
                 districtsChart.Bar(generateDataForChart(districts, v));
 
                 fillinDistricts(districts);
-                showDistrictHistory($("#districts").val());
+                showDistrictHistory($("#districts").val(), $('#times').val());
             });
 
             

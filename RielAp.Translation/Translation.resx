@@ -888,4 +888,13 @@
   <data name="StatisticPageTitle" xml:space="preserve">
     <value>Статистика</value>
   </data>
+  <data name="TimePeriodAllTime" xml:space="preserve">
+    <value>Весь час</value>
+  </data>
+  <data name="TimePeriodLast2Months" xml:space="preserve">
+    <value>Два останніх місяці</value>
+  </data>
+  <data name="TimePeriodLastMonth" xml:space="preserve">
+    <value>Останній місяць</value>
+  </data>
 </root>
