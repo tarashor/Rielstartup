@@ -11,15 +11,15 @@ There is good feature: when user tries to add announcement about apartment it is
 
 ## Screenshots
 <br/>
-![Alt text](/screens/s1.png)
+![Alt text](screens/s1.png)
 <br/>
-![Alt text](/screens/s2.png)
+![Alt text](screens/s2.png)
 <br/>
-![Alt text](/screens/s3.png)
+![Alt text](screens/s3.png)
 <br/>
-![Alt text](/screens/s4.png)
+![Alt text](screens/s4.png)
 <br/>
-![Alt text](/screens/s5.png)
+![Alt text](screens/s5.png)
 <br/>
 
 ## Commercial idea of this project 
