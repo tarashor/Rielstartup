@@ -10,17 +10,16 @@ There is good feature: when user tries to add announcement about apartment it is
 .NET Framework 4, ASP.NET MVC 4, EntityFramework 5, HTML5, JQuery, Bootstrap, MS SQL Server 2008, Yandex maps API (The same as google maps api).
 
 ## Screenshots
-<br/>
+
 ![Alt text](screens/s1.png)
-<br/>
+
 ![Alt text](screens/s2.png)
-<br/>
+
 ![Alt text](screens/s3.png)
-<br/>
+
 ![Alt text](screens/s4.png)
-<br/>
+
 ![Alt text](screens/s5.png)
-<br/>
 
 ## Commercial idea of this project 
 Limit the number of announcements for users (realtors). 
